@@ -37,6 +37,11 @@
     align-items: center
     display: grid
 
+@media screen and (max-width:768px) 
+    .reverse 
+        display: flex
+        flex-direction: column-reverse
+    
 
 
 // === Basic CSS helpers for Text Decoration ===
@@ -73,6 +78,28 @@
     content: "\f14a"
     position: absolute
     left : 0.5em /*左端からのアイコンまでの距離*/
+
+
+.heading-3 
+  position: relative
+  padding: 0.25em 0.55em
+  border-top: solid 2px black
+  border-bottom: solid 2px black
+
+.heading-3:before, .heading-3:after 
+  content: ''
+  position: absolute
+  top: -7px
+  width: 2px
+  height: -webkit-calc(100% + 14px)
+  height: calc(100% + 14px)
+  background-color: black
+
+.heading-3:before 
+  left: 7px
+
+.heading-3:after 
+  right: 7px
 
 
 .listify::before 

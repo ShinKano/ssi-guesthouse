@@ -1,6 +1,8 @@
 import React from 'react'
+//
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
+import About from '../components/About'
 import { Link } from 'gatsby'
 
 import("../../src/index.sass")
@@ -8,8 +10,8 @@ import("../../src/index.sass")
 const Tetete = () => (
     <Layout>
         <Hero />
-
-
+        <div className="margin-top-2"></div>
+        <About />
         <section 
             className="main content"
             style={{
