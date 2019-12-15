@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{230:function(e,n,t){"use strict";t.r(n);var a=t(0),u=t.n(a),c=t(222);n.default=function(){return u.a.createElement(c.a,null,u.a.createElement("div",null,"test!"))}}}]);
+//# sourceMappingURL=component---src-pages-tetete-js-c98427d1b0846802003e.js.map
