@@ -1,6 +1,9 @@
 import React from 'react'
+//
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
+import About from '../components/About'
+import News from '../components/News'
 import { Link } from 'gatsby'
 
 import("../../src/index.sass")
@@ -8,6 +11,8 @@ import("../../src/index.sass")
 const Tetete = () => (
     <Layout>
         <Hero />
+        <News />
+        <About />
 
 
         <section 
