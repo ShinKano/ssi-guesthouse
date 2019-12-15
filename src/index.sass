@@ -1,3 +1,128 @@
+// === Basic CSS helpers for Spacing ===
+.margin-top 
+    margin-top: 1rem
+
+.margin-top-2 
+    margin-top: 2rem
+
+.margin-top-10px 
+    margin-top: 10px
+
+.margin-bottom 
+    margin-bottom: 1rem
+
+
+
+// === Basic CSS helpers for Alignments ===
+
+.text-align-center 
+    text-align: center
+
+
+.align-self-center 
+    align-self: center
+
+
+.inline-block 
+    display: inline-block
+
+
+.is-vcentered 
+    align-items: center
+
+.is-hcentered 
+    justify-content: center
+
+.is-grid 
+    align-items: center
+    display: grid
+
+
+
+// === Basic CSS helpers for Text Decoration ===
+
+.color-yellow 
+    color: #f1c000
+
+
+.marker-pen 
+    background: linear-gradient(transparent 60%, #ffe999 0%)
+    display: inline
+
+
+.heading-1 
+    border-radius: 4px
+    background-color: powderblue
+    padding: 12px
+    display: inline-block
+
+
+.heading-2 
+    position: relative
+    color: white
+    background: #81d0cb
+    line-height: 1.4
+    padding: 0.5em 0.5em 0.5em 1.8em
+    display: inline-block
+    border-radius: 8px
+
+.heading-2:before 
+    font-family: "Font Awesome 5 Free"
+    content: "\f14a"
+    position: absolute
+    left : 0.5em /*左端からのアイコンまでの距離*/
+
+
+.listify::before 
+    content: "• "
+
+
+
+// Make the first letter big
+.first-letter 
+    line-height: 2rem
+
+.first-letter:first-letter 
+    font-size: 2em
+    color: #7172ac
+
+
+
+
+// === Other Basic CSS helpers ===
+
+.position-relative 
+    position: relative
+
+
+.border-radius 
+    border-radius: 4px
+
+
+img.profile-picture 
+    border-radius: 999px
+    height: 100px
+    width: 100px
+
+
+
+// === Styles for Components ===
+
+.is-hero 
+    height: 90vh
+    display: flex
+    align-items: center
+
+.bg-hero 
+    background-image: url("")
+    background-size: cover
+    background-position-y: top
+    background-position-x: right
+
+
+
+
+
 .blog-content > div > h3
     width: fit-content
     background: linear-gradient(transparent 80%, #febf8c 80%)

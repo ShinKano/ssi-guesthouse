@@ -1,21 +1,18 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Hero from '../components/Hero'
 import { Link } from 'gatsby'
 
 import("../../src/index.sass")
 
 const Tetete = () => (
     <Layout>
-        <section 
-            className="main background-color-main content"
-            style={{
-                height: '90vh',
-            }}
-        >
-            <div className="full-height align-items-center">
-                    <h1 className="has-text-primary">
-                        お金がもらえる・<br className="mobile-br" />もどってくるかも？<br />申請したい手続きや制度まとめ
-                    </h1>
+        <section className="section is-hero bg-hero">
+            <div className="container">
+                <h1 className="title color-yellow">
+                    ゲストハウス ストーリーシェア
+                </h1>
+                <Hero />
             </div>
         </section>
 

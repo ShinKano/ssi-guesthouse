@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: 'お金がもらえる/戻ってくるかもしれない制度まとめ',
+    title: 'Guesthouse Storyshare (ゲストハウス ストーリーシェア)',
     description:
-      '申請することでお金がもらえたり、戻ってきたりする手続きや制度をまとめています。',
+      'フィリピン・セブ島・バギオに展開するゲストハウスです。安心で安全な旅をサポートします。',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
     {
         resolve: `gatsby-plugin-google-analytics`,
         options: {
