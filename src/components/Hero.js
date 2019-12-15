@@ -7,7 +7,7 @@ import bgImage from '../img/bg-1.jpg'
 const BackgroundImage = styled.section`
     background-image: url(${bgImage});
     background-position: center;
-    background-attachment: fixed;
+    background-size: cover;
     height: 90vh;
     display: flex;
     align-items: center;
