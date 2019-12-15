@@ -7,14 +7,7 @@ import("../../src/index.sass")
 
 const Tetete = () => (
     <Layout>
-        <section className="section is-hero bg-hero">
-            <div className="container">
-                <h1 className="title color-yellow">
-                    ゲストハウス ストーリーシェア
-                </h1>
-                <Hero />
-            </div>
-        </section>
+        <Hero />
 
 
         <section 
