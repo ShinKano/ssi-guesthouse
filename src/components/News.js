@@ -11,6 +11,7 @@ class News extends React.Component {
     return (
         <section className="section has-background-dark">
 
+
             <div className="columns">
                 {posts &&
                 posts.map(({ node: post }) => (
