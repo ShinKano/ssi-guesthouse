@@ -29,8 +29,8 @@ const Hero = () => {
                         </h2>
                         <h2 className="subtitle color-white">
                             旅人が集まる
-                            <span className="inline-block">フィリピン・セブ島の</span>
-                            <span className="inline-block">日本人経営ホステル</span>
+                            <span className="inline-block">セブ島の</span>
+                            <span className="inline-block">日本人経営ゲストハウス</span>
                         </h2>
                         <div className="field">
                             <a className="button is-primary has-text-weight-bold"
