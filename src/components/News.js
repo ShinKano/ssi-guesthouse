@@ -10,14 +10,12 @@ class News extends React.Component {
 
     return (
         <section className="section has-background-dark">
-
-
             <div className="columns">
                 {posts &&
                 posts.map(({ node: post }) => (
-                    <div className="is-parent column is-3" key={post.id}>
+                    <div className="is-parent column" key={post.id}>
                     <article
-                        className={`blog-list-item tile is-child box notification ${
+                        className={`blog-list-item tile is-child box ${
                         post.frontmatter.featuredpost ? 'is-featured' : ''
                         }`}
                     >
@@ -32,7 +30,7 @@ class News extends React.Component {
                             />
                             <p className="post-meta">
                                 <Link
-                                className="title has-text-info is-size-4"
+                                className="title has-text-info is-size-6"
                                 to={post.fields.slug}
                                 >
                                 {post.frontmatter.title}
@@ -47,9 +45,7 @@ class News extends React.Component {
 
                         </header>
                         <p>
-                        {post.frontmatter.description}
-                        <br />
-                        <br />
+                        
                         <Link className="button has-text-primary" to={post.fields.slug}>
                             詳細を読む →
                         </Link>
@@ -77,7 +73,7 @@ export default () => (
       query NewsQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }, limit: 4
+          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }, limit: 5
         ) {
           edges {
             node {
