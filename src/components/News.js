@@ -9,44 +9,47 @@ class News extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-        <section className="section has-background-dark">
-            <div className="columns">
+        <section className="section has-background-classic-blue">
+            <h2 className="title has-text-centered color-white">
+                News
+            </h2>
+            <div className="columns is-mobile overflow-scroll">
                 {posts &&
                 posts.map(({ node: post }) => (
-                    <div className="is-parent column is-one-third-tablet" key={post.id}>
-                        <Link to={post.fields.slug}>
+                    <div className="is-parent column min-width-1" key={post.id}>
+                        <Link to={post.fields.slug} className="color-white">
 
-                    <article
-                        className={`blog-list-item tile is-child box ${
-                        post.frontmatter.featuredpost ? 'is-featured' : ''
-                        }`}
-                    >
-                        <header className="blogheader-top">
-                        {post.frontmatter.featuredimage ? (
-                            <div className="">
-                            <PreviewCompatibleImage
-                                imageInfo={{
-                                image: post.frontmatter.featuredimage,
-                                alt: `featured image thumbnail for post ${post.title}`,
-                                }}
-                            />
-                            
-                                <h3
-                                className="title has-text-info is-size-6"
-                                to={post.fields.slug}
-                                >
-                                {post.frontmatter.title}
-                                </h3>
-                                
-                                <p className="is-size-7 is-block">
-                                {post.frontmatter.date}
-                                </p>
-                            
-                            </div>
-                        ) : null}
+                            <article
+                                className={`blog-list-item tile is-child ${
+                                post.frontmatter.featuredpost ? 'is-featured' : ''
+                                }`}
+                            >
+                                <header className="blogheader-top">
+                                {post.frontmatter.featuredimage ? (
+                                    <div className="hovered-color-primary">
+                                    <PreviewCompatibleImage
+                                        imageInfo={{
+                                        image: post.frontmatter.featuredimage,
+                                        alt: `featured image thumbnail for post ${post.title}`,
+                                        }}
+                                    />
+                                    
+                                        <h3
+                                        className="color-white is-size-6 margin-top"
+                                        to={post.fields.slug}
+                                        >
+                                            {post.frontmatter.title}
+                                        </h3>
+                                        
+                                        <p className="is-size-7 color-white is-block">
+                                            {post.frontmatter.date}
+                                        </p>
+                                    
+                                    </div>
+                                ) : null}
 
-                        </header>
-                    </article>
+                                </header>
+                            </article>
                         </Link>
                     </div>
                 ))}
@@ -70,7 +73,7 @@ export default () => (
       query NewsQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }, limit: 5
+          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }, limit: 4
         ) {
           edges {
             node {

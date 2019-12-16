@@ -12,6 +12,7 @@ const Tetete = () => (
     <Layout>
         <Hero />
         <News />
+        <div className="margin-top-2" />
         <About />
 
 

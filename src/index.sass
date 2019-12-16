@@ -20,6 +20,9 @@ p
 .padding-2
     padding: 2rem
 
+.min-width-1
+    min-width: 300px
+
 @media screen and (min-width:768px) 
     .max-width-1
         max-width: 370px
@@ -60,11 +63,16 @@ p
 
 // === Basic CSS helpers for Text Decoration ===
 
-.color-yellow 
+.color-yellow
     color: #f1c000
 
-.color-white 
+.color-white
     color: #fff
+
+.hovered-color-primary:hover
+    background-color: #e6666652
+    border-radius: 5px
+
 
 .marker-pen 
     background: linear-gradient(transparent 60%, #ffe999 0%)
@@ -147,7 +155,8 @@ img.profile-picture
     height: 100px
     width: 100px
 
-
+.overflow-scroll
+    overflow: scroll
 
 // === Styles for Components ===
 
@@ -162,6 +171,8 @@ img.profile-picture
     background-position-y: top
     background-position-x: right
 
+.has-background-classic-blue
+    background-color: #0f4c81
 
 header.blogheader-top
     display: block
