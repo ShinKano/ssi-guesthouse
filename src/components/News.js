@@ -13,13 +13,15 @@ class News extends React.Component {
             <div className="columns">
                 {posts &&
                 posts.map(({ node: post }) => (
-                    <div className="is-parent column" key={post.id}>
+                    <div className="is-parent column is-one-third-tablet" key={post.id}>
+                        <Link to={post.fields.slug}>
+
                     <article
                         className={`blog-list-item tile is-child box ${
                         post.frontmatter.featuredpost ? 'is-featured' : ''
                         }`}
                     >
-                        <header>
+                        <header className="blogheader-top">
                         {post.frontmatter.featuredimage ? (
                             <div className="">
                             <PreviewCompatibleImage
@@ -28,29 +30,24 @@ class News extends React.Component {
                                 alt: `featured image thumbnail for post ${post.title}`,
                                 }}
                             />
-                            <p className="post-meta">
-                                <Link
+                            
+                                <h3
                                 className="title has-text-info is-size-6"
                                 to={post.fields.slug}
                                 >
                                 {post.frontmatter.title}
-                                </Link>
+                                </h3>
                                 
-                                <span className="is-size-7 is-block">
-                                最終更新：{post.frontmatter.date}
-                                </span>
-                            </p>
+                                <p className="is-size-7 is-block">
+                                {post.frontmatter.date}
+                                </p>
+                            
                             </div>
                         ) : null}
 
                         </header>
-                        <p>
-                        
-                        <Link className="button has-text-primary" to={post.fields.slug}>
-                            詳細を読む →
-                        </Link>
-                        </p>
                     </article>
+                        </Link>
                     </div>
                 ))}
             </div>
