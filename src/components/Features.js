@@ -7,17 +7,28 @@ const Features = () => {
 
     const features = [
         {title: 'レンタルバイク', 
-         desc: '便利なバイクの貸し出しサービスを行っています。セブの街をすみずみまで探検してみましょう。'},
-        {title: 'その２', 
-         desc: '便利なバイクの貸し出しサービスを行っています。セブの街をすみずみまで探検してみましょう。'},
-        {title: 'その3', 
-         desc: '便利なバイクidjijjの貸し出しサービスを行っています。セブの街をすみずみまで探検してみましょう。'},
-        {title: 'その4', 
-         desc: '便利なバイクidjijjの貸し出しサービスを行っています。セブの街をすみずみまで探検してみましょう。'},
-        {title: 'その5', 
-         desc: '便利なバイクidjijjの貸し出しサービスを行っています。セブの街をすみずみまで探検してみましょう。'},
-        {title: 'その6', 
-         desc: '便利なバイクidjijjの貸し出しサービスを行っています。セブの街をすみずみまで探検してみましょう。'},
+         desc : '便利なスクーターの貸し出しサービスが利用可能。フィリピン・セブ島の街をすみずみまで探検してみましょう。',
+         image: about},
+        
+        {title: '食事サービス', 
+         desc : 'ご希望の方にはランチやディナーを1食100ペソでご用意します。格安でセブ島のローカル料理をご堪能ください。',
+         image: about},
+        
+        {title: '英語レッスン', 
+         desc : '語学学校が運営するゲストハウスなので、英語レッスンも受けられます。1レッスン350ペソ〜で発音矯正も。',
+         image: about},
+        
+        {title: '週末ツアー', 
+         desc : 'ツアーを不定期開催しています。ジンベイサメと泳いだり、滝に飛び込んだりセブのアクティビティを満喫！',
+         image: about},
+        
+        {title: '人気のEOP', 
+         desc : '2つのハウスのうち１つは英語オンリー。国籍に関わらず全ての人が英語で喋るので、国際交流にピッタリです。',
+         image: about},
+        
+        {title: '色々な国のゲスト', 
+         desc : 'ゲスト同士での交流や学び合いも盛んです。色々な国のゲストとランゲージエクスチェンジもできちゃいます。',
+         image: about},
     ];
 
     return (
@@ -38,8 +49,8 @@ const Features = () => {
                         <div className="column is-one-third" key={feature.title}>
                             <div className="card border-radius">
                                 <div className="card-image">
-                                    <figure className="image is-4by3">
-                                        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                                    <figure className="image is-2by1">
+                                        <img className="border-radius" src={feature.image} alt="Placeholder image" />
                                     </figure>
                                 </div>
                                 <div className="card-content">
