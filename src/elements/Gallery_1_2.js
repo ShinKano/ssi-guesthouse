@@ -1,12 +1,6 @@
 import React from 'react'
 
-import about from '../img/bg-1.jpg'
-
-const Gallery_1_2 = (props) => {
-
-    return (
-
-    
+const Gallery_1_2 = (props) => (
     <div>
         <div className="columns">
             <div className="column">
@@ -33,7 +27,7 @@ const Gallery_1_2 = (props) => {
             </div>
         </div>
     </div>
-    )
-}
+)
+
 
 export default Gallery_1_2

@@ -1,9 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
 //
 import Button from '../elements/Button'
-import about from '../img/bg-1.jpg'
 import Gallery_1_2 from '../elements/Gallery_1_2'
+//
+import apas_out from '../img/apas_out.jpg'
+import apas_single001 from '../img/apas_single001.jpg'
+import apas_kitchen from '../img/apas_kitchen.jpg'
+import guadalupe_out from '../img/guadalupe_out.jpg'
+import guadalupe_single002 from '../img/guadalupe_single002.jpg'
+import guadalupe_living002 from '../img/guadalupe_living002.jpg'
+
 
 
 
@@ -35,9 +41,9 @@ const Locations = () => {
                     </div>
                     <div className="column is-6">
                         <Gallery_1_2
-                            img1={about}
-                            img2={about}
-                            img3={about}
+                            img1={apas_out}
+                            img2={apas_single001}
+                            img3={apas_kitchen}
                         />
                     </div>
                 </div>
@@ -47,9 +53,9 @@ const Locations = () => {
                 <div className="columns reverse margin-top-2">
                     <div className="column is-6">
                         <Gallery_1_2
-                            img1={about}
-                            img2={about}
-                            img3={about}
+                            img1={guadalupe_living002}
+                            img2={guadalupe_single002}
+                            img3={guadalupe_out}
                         />
                     </div>
                     <div className="column max-width-1">
