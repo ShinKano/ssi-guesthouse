@@ -22,10 +22,10 @@ export const BlogPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+            <h1 className="title is-size-3 has-text-weight-bold is-bold-light blog-title">
               {title}
             </h1>
-            <p>{description}</p>
+            <p className="blog-disc">{description}</p>
 
             <div className="blog-content">
                 <PostContent content={content} />
@@ -68,7 +68,7 @@ const BlogPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | 3分でざっくり分かる！">
+          <Helmet titleTemplate="%s | ゲストハウス・ストーリーシェア">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"

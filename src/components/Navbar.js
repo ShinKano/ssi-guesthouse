@@ -62,7 +62,7 @@ const Navbar = class extends React.Component {
             <div className="navbar-start has-text-centered">
               
               <Link className="navbar-item" to="/blog">
-                全ての記事
+                すべての記事
               </Link>
               <Link className="navbar-item" to="/contact">
                 お問い合わせ

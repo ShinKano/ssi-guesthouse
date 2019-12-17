@@ -7,16 +7,13 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <section 
-            className="main background-color-main content"
-            style={{
-                height: '40vh',
-            }}
-        >
-            <div className="full-height align-items-center">
-                    <h1 className="has-text-primary">
+        <section className="main has-background-classic-blue">
+            <div className="container">
+                <div className="full-height align-items-center">
+                    <h1 className="title color-white has-text-centered">
                         すべての記事
                     </h1>
+                </div>
             </div>
         </section>
         <section className="section">

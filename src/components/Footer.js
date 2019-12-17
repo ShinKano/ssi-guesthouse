@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
-import github from '../img/social/github.svg'
 
 const Footer = class extends React.Component {
   render() {
