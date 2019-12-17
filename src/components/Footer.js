@@ -9,10 +9,10 @@ import github from '../img/social/github.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <footer className="footer has-background-classic-blue has-text-white-ter">
         
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
+        <div className="content has-text-centered has-background-classic-blue has-text-white-ter">
+          <div className="container has-background-classic-blue color-white">
             <div 
                 className="columns"
                 style={{

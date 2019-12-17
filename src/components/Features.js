@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 //
 import about from '../img/bg-1.jpg'
 
@@ -56,7 +55,7 @@ const Features = () => {
                                 <div className="card-content">
                                     <div className="media">
                                         <div className="media-content">
-                                            <p className="title is-4">{feature.title}</p>
+                                            <p className="title is-4 has-text-centered">{feature.title}</p>
                                         </div>
                                     </div>
                                     <div className="content">

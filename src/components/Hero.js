@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 //
 import bgImage from '../img/bg-1.jpg'
+import Button from '../elements/Button'
 
 
 const BackgroundImage = styled.section`
@@ -32,12 +33,10 @@ const Hero = () => {
                             <span className="inline-block">セブ島の</span>
                             <span className="inline-block">日本人経営ゲストハウス</span>
                         </h2>
-                        <div className="field">
-                            <a className="button is-primary has-text-weight-bold"
-                                href="https://www.storyshare.jp/estimation_inquiry/">
-                                    予約はコチラ！
-                            </a>
-                        </div>
+                        <Button 
+                            href="https://www.storyshare.jp/estimation_inquiry/"
+                            text="予約はコチラ！"
+                        />
                     </div>
                 </div>
             </div>
