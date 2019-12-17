@@ -23,14 +23,14 @@ const Footer = class extends React.Component {
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
-                      <Link to="/" className="navbar-item">
+                      <Link to="/" className="navbar-item footer-item">
                         ホーム
                       </Link>
                     </li>
                     
                     <li>
                       <a
-                        className="navbar-item"
+                        className="navbar-item footer-item"
                         href="/admin/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -45,27 +45,27 @@ const Footer = class extends React.Component {
                 <section>
                   <ul className="menu-list">
                     <li>
-                      <Link className="navbar-item" to="/blog">
+                      <Link className="navbar-item footer-item" to="/blog">
                         全ての記事
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact">
+                      <Link className="navbar-item footer-item" to="/contact">
                         お問い合わせ
                       </Link>
                     </li>
                   </ul>
                 </section>
               </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
+              <div className="column is-4 social margin-top-2">
+                <a title="facebook" href="https://www.facebook.com/StoryShare/">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="twitter" href="https://twitter.com">
+                <a title="twitter" href="https://twitter.com/ssistaff">
                   <img
                     className="fas fa-lg"
                     src={twitter}
@@ -73,17 +73,10 @@ const Footer = class extends React.Component {
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
-                <a title="instagram" href="https://instagram.com">
+                <a title="instagram" href="https://www.instagram.com/daily_english_for_you/">
                   <img
                     src={instagram}
                     alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="github" href="https://github.com">
-                  <img
-                    src={github}
-                    alt="github"
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
