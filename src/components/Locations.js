@@ -34,7 +34,7 @@ const Locations = () => {
                         </p>
                         <div className="has-text-centered margin-top-2">
                             <Button
-                                to="/rooms"
+                                to="/rooms#apas"
                                 text="お部屋を見る"
                             />
                         </div>
@@ -71,7 +71,7 @@ const Locations = () => {
                         </p>
                         <div className="has-text-centered margin-top-2">
                             <Button
-                                to="/rooms"
+                                to="/rooms#guadalupe"
                                 text="お部屋を見る"
                             />
                         </div>
