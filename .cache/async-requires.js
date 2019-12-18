@@ -11,6 +11,7 @@ exports.components = {
   "component---src-pages-contact-index-js": () => import("../src/pages/contact/index.js" /* webpackChunkName: "component---src-pages-contact-index-js" */),
   "component---src-pages-contact-thanks-js": () => import("../src/pages/contact/thanks.js" /* webpackChunkName: "component---src-pages-contact-thanks-js" */),
   "component---src-pages-index-js": () => import("../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
+  "component---src-pages-rooms-js": () => import("../src/pages/rooms.js" /* webpackChunkName: "component---src-pages-rooms-js" */),
   "component---src-pages-tags-index-js": () => import("../src/pages/tags/index.js" /* webpackChunkName: "component---src-pages-tags-index-js" */)
 }
 

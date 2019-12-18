@@ -14,6 +14,7 @@ exports.components = {
   "component---src-pages-contact-index-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/contact/index.js"))),
   "component---src-pages-contact-thanks-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/contact/thanks.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/index.js"))),
+  "component---src-pages-rooms-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/rooms.js"))),
   "component---src-pages-tags-index-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/tags/index.js")))
 }
 

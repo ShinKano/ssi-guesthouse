@@ -7,7 +7,7 @@ export default class BlogIndexPage extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="main has-background-classic-blue">
+        <section className="section has-background-classic-blue">
             <div className="container">
                 <div className="full-height align-items-center">
                     <h1 className="title color-white has-text-centered">
