@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 //
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {    faUtensils,
@@ -14,12 +13,13 @@ import {    faUtensils,
             faBan,
             faBaby,
             faGlassCheers,
-            faMoneyBillAlt,
-            faDog } from '@fortawesome/free-solid-svg-icons'
+            faMoneyBillAlt } from '@fortawesome/free-solid-svg-icons'
 //
 import Layout from '../components/Layout'
 import Gallery_1_2 from '../elements/Gallery_1_2'
 import GalleryHscroll from '../elements/GalleryHscroll'
+import Button from '../elements/Button'
+import ButtonEx from '../elements/ButtonEx'
 //
 import apas_header from '../img/apas-header.jpg'
 import apas_out from '../img/apas_out.jpg'
@@ -33,7 +33,6 @@ import guadalupe_living005 from '../img/guadalupe_living005.jpg'
 import guadalupe_entrance002 from '../img/guadalupe_entrance002.jpg'
 import guadalupe_single from '../img/guadalupe_single.jpg'
 import guadalupe_double from '../img/guadalupe_double.jpg'
-import guests002 from '../img/guests002.jpg'
 
 const Rooms = () => (
 
@@ -111,9 +110,21 @@ const Rooms = () => (
                         </h3>
                         <p className="is-size-5">
                             850PHP/1泊
-                            <br /><br />
-                            シングルベッド1台
                         </p>
+                        <ButtonEx
+                            href="https://booking.com/hotel/ph/story-share-inc.html"
+                            text="Booking.comで予約"
+                        />
+                        <p>
+                            予約サイトの価格が高いですか？<br />
+                            直接のご予約で、上記料金を適用できます。
+                        </p>
+                        <Button
+                            to="/contact"
+                            text="直接このサイトで予約"
+                            green={true}
+                        />
+
                     </div>
                     <div className="column is-7">
                         <figure className="image">
@@ -197,9 +208,20 @@ const Rooms = () => (
                         </h3>
                         <p className="is-size-5">
                             850PHP/1泊
-                            <br /><br />
-                            シングルベッド1台
                         </p>
+                        <ButtonEx
+                            href="https://booking.com/hotel/ph/story-share-inc.html"
+                            text="Booking.comで予約"
+                        />
+                        <p>
+                            予約サイトの価格が高いですか？<br />
+                            直接のご予約で、上記料金を適用できます。
+                        </p>
+                        <Button
+                            to="/contact"
+                            text="直接このサイトで予約"
+                            green={true}
+                        />
                     </div>
                     <div className="column is-7">
                         <figure className="image">
@@ -207,16 +229,27 @@ const Rooms = () => (
                         </figure>
                     </div>
                 </div>
-                <div className="columns">
+                <div className="columns margin-top-2">
                     <div className="column is-5 has-text-centered max-width-1">
                         <h3 className="subtitle is-size-4">
                             ツインルーム
                         </h3>
                         <p className="is-size-5">
                             850PHP/1泊
-                            <br /><br />
-                            シングルベッド2台
                         </p>
+                        <ButtonEx
+                            href="https://booking.com/hotel/ph/story-share-inc.html"
+                            text="Booking.comで予約"
+                        />
+                        <p>
+                            予約サイトの価格が高いですか？<br />
+                            直接のご予約で、上記料金を適用できます。
+                        </p>
+                        <Button
+                            to="/contact"
+                            text="直接このサイトで予約"
+                            green={true}
+                        />
                     </div>
                     <div className="column is-7">
                         <figure className="image">
@@ -254,24 +287,24 @@ const Rooms = () => (
                     </div>
 
                     <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> サービス</span>
+                        <FontAwesomeIcon icon={faConciergeBell} /><span className="subtitle"> サービス</span>
                         <p>専用チェックイン / チェックアウト</p>
                         <br />
-                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ランドリー</span>
+                        <FontAwesomeIcon icon={faTshirt} /><span className="subtitle"> ランドリー</span>
                         <p>洗濯サービスは格安にて承ります</p>
                         <br />
-                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle"> 駐車場</span>
+                        <FontAwesomeIcon icon={faParking} /><span className="subtitle"> 駐車場</span>
                         <p>駐車スペースは1日20PHPにてご利用できます</p>
                     </div>
 
                     <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> その他</span>
+                        <FontAwesomeIcon icon={faHome} /><span className="subtitle"> その他</span>
                         <p>分煙・喫煙スペース有</p>
                         <p>エアコン</p>
                         <p>防音ルーム</p>
                         <p>禁煙スペース有</p>
                         <br />
-                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> 対応言語</span>
+                        <FontAwesomeIcon icon={faLanguage} /><span className="subtitle"> 対応言語</span>
                         <p>英語 / 日本語</p>
                     </div>
                     
@@ -304,33 +337,27 @@ const Rooms = () => (
                         <br />
                         <p>チェックアウト :<br /> 11:00 AM - 12:00 PM</p>
                         <br />
+                        <FontAwesomeIcon icon={faGlassCheers} /><span className="subtitle"> 年齢制限なし</span>
+                        <p>ゲストの年齢制限はありません</p>
+                        
+                    </div>
+
+                    <div className="column is-size-5 is-half-mobile">
+                        <FontAwesomeIcon icon={faBaby} /><span className="subtitle"> お子様とベッド</span>
+                        <p>お子様も宿泊できます</p>
+                        <p>ベビーベッドのご用意はありません</p>
+                        <p>エクストラベッドのご用意はありません</p>
+                        <br />
+                        <FontAwesomeIcon icon={faBan} /><span className="subtitle"> キャンセル / お支払い</span>
+                        <p>キャンセルについてはお部屋によって異なりますので. ご予約の際にお問い合わせください。</p>
+                    </div>
+
+                    <div className="column is-size-5 is-half-mobile">
+                        <FontAwesomeIcon icon={faMoneyBillAlt} /><span className="subtitle"> 現金のみ</span>
+                        <p>現金でのお支払いのみ可能です</p>
+                        <br />
                         <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ペット</span>
-                        <p>ペットの宿泊不可</p>
-                        <br />
-                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle"> Wifi</span>
-                        <p>WiFi無料</p>
-                    </div>
-
-                    <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> サービス</span>
-                        <p>専用チェックイン / チェックアウト</p>
-                        <br />
-                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ランドリー</span>
-                        <p>洗濯サービスは格安にて承ります</p>
-                        <br />
-                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle"> 駐車場</span>
-                        <p>駐車スペースは1日20PHPにてご利用できます</p>
-                    </div>
-
-                    <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> その他</span>
-                        <p>分煙・喫煙スペース有</p>
-                        <p>エアコン</p>
-                        <p>防音ルーム</p>
-                        <p>禁煙スペース有</p>
-                        <br />
-                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> 対応言語</span>
-                        <p>英語 / 日本語</p>
+                        <p>ペットのお持ち込み不可</p>
                     </div>
                     
                     
