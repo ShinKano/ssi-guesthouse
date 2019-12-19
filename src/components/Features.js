@@ -60,10 +60,8 @@ const Features = () => {
                                     </figure>
                                 </div>
                                 <div className="card-content">
-                                    <div className="media">
-                                        <div className="media-content">
-                                            <p className="title is-4 has-text-centered">{feature.title}</p>
-                                        </div>
+                                    <div className="margin-bottom">
+                                        <p className="title is-4 has-text-centered">{feature.title}</p>
                                     </div>
                                     <div className="content">
                                         {feature.desc}

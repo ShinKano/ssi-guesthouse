@@ -107,11 +107,7 @@ export default class Index extends React.Component {
                   </button>
                 </div>
               </form>
-              <div className="margin-top" />
-              <Button
-                text="ご予約はコチラ"
-                href="#"
-            　 />
+              
               <p className="margin-top-2">
                 上記のお問い合わせボタンより、お気軽にお問い合わせください。
                 スタッフがあなたのご質問、ご要望にお答えします。 

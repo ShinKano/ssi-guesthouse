@@ -210,7 +210,7 @@ const Rooms = () => (
                             850PHP/1泊
                         </p>
                         <ButtonEx
-                            href="https://booking.com/hotel/ph/story-share-inc.html"
+                            href="https://www.booking.com/hotel/ph/storyshare-inc-guesthouse.html"
                             text="Booking.comで予約"
                         />
                         <p>
@@ -238,7 +238,7 @@ const Rooms = () => (
                             850PHP/1泊
                         </p>
                         <ButtonEx
-                            href="https://booking.com/hotel/ph/story-share-inc.html"
+                            href="https://www.booking.com/hotel/ph/storyshare-inc-guesthouse.html"
                             text="Booking.comで予約"
                         />
                         <p>
@@ -310,11 +310,7 @@ const Rooms = () => (
                     
                     
                 </div>
-                <div className="columns is-centered margin-top-2">
-                    <div className="column">
-                        
-                    </div>
-                </div>
+                
             </div>
         </section>
 
@@ -358,13 +354,6 @@ const Rooms = () => (
                         <br />
                         <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ペット</span>
                         <p>ペットのお持ち込み不可</p>
-                    </div>
-                    
-                    
-                </div>
-                <div className="columns is-centered margin-top-2">
-                    <div className="column">
-                        
                     </div>
                 </div>
             </div>
