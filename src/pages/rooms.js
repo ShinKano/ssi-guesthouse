@@ -15,7 +15,8 @@ import guadalupe_living003 from '../img/guadalupe_living003.jpg'
 import guadalupe_living004 from '../img/guadalupe_living004.jpg'
 import guadalupe_living005 from '../img/guadalupe_living005.jpg'
 import guadalupe_entrance002 from '../img/guadalupe_entrance002.jpg'
-import guadalupe_single001 from '../img/guadalupe_single001.jpg'
+import guadalupe_single from '../img/guadalupe_single.jpg'
+import guadalupe_double from '../img/guadalupe_double.jpg'
 import guests002 from '../img/guests002.jpg'
 
 const Rooms = () => (
@@ -154,8 +155,12 @@ const Rooms = () => (
                             また、広い庭とテラスもゲストハウスストーリーシェアの特徴です。
                             賑やかなセブの中心地にありながら、落ち着いた雰囲気で快適に過ごしていただけます。
                             <br /><br />
-                            近くの「ITパーク」と呼ばれるエリアには、レストランやカフェが揃っていますので、食事に困ることはありません。
-                            さらにゆったり落ち着いてリゾートを満喫するなら「キャンプ ラプラプ」という自然いっぱいのエリアに歩いて行くことも可能です。
+                            ゲストハウスストーリーシェア「グアダルーペ」はレストランやモールへのお出かけにも遠くないエリアにございます。
+                            カフェ、日本食レストラン、韓国レストランは歩いて数分の場所にございます。ショッピングモールへは20分ほどです。
+                            <br /><br />
+                            もちろん、タクシーやジプニーなどもご利用いただけます。フィリピンではいたるところにタクシーが走っており、
+                            初乗り料金100円ほどです。ジプニーと呼ばれるローカルバスや、トライシクルを利用すれば
+                            さらに格安でどこへでもお出かけできます
                             <br /><br />
                             ゲストハウスストーリーシェアではバイクスクーターのレンタルもご利用できます。 
                             もちろん、バイクを使わなくても、タクシーやジプニーがすぐ捕まえられるエリアですので、
@@ -182,17 +187,64 @@ const Rooms = () => (
                     </div>
                     <div className="column is-7">
                         <figure className="image">
-                            <img className="border-radius" src={guadalupe_single001} alt="guadalupe single room" />
+                            <img className="border-radius" src={guadalupe_single} alt="guadalupe single room" />
+                        </figure>
+                    </div>
+                </div>
+                <div className="columns">
+                    <div className="column is-5 has-text-centered max-width-1">
+                        <h3 className="subtitle is-size-4">
+                            ツインルーム
+                        </h3>
+                        <p className="is-size-5">
+                            850PHP/1泊
+                            <br /><br />
+                            シングルベッド2台
+                        </p>
+                    </div>
+                    <div className="column is-7">
+                        <figure className="image">
+                            <img className="border-radius" src={guadalupe_double} alt="guadalupe twin room" />
                         </figure>
                     </div>
                 </div>
             </div>
         </section>
         <GalleryHscroll 
-            images={[guadalupe_living003,guadalupe_living004,guadalupe_living005,guadalupe_single001]}
+            images={[guadalupe_living003,guadalupe_living004,guadalupe_living005,]}
         />
 
 
+        <section className="section">
+            <div className="container">
+                <h2 className="subtitle is-size-4 has-text-centered">
+                    お部屋の設備・ルール
+                </h2>
+                <hr />
+                <p className="has-text-centered">
+                    「アパス」「グアダルーペ」共通
+                </p>
+
+                <div className="columns is-centered margin-top-2">
+                    <div className="column is-4 is-6-mobile">
+                        <span className="icon">
+                            <i className="fas fa-home"></i>
+                        </span>
+                    </div>
+                    <div className="column is-4">
+                        b
+                    </div>
+                    <div className="column is-4">
+                        c
+                    </div>
+                </div>
+                <div className="columns is-centered margin-top-2">
+                    <div className="column">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </Layout>
 )
