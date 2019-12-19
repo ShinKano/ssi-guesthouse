@@ -1,6 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
 //
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {    faUtensils,
+            faPaw,
+            faWifi,
+            faConciergeBell,
+            faTshirt,
+            faParking,
+            faHome,
+            faLanguage,
+            faSuitcaseRolling,
+            faBan,
+            faBaby,
+            faGlassCheers,
+            faMoneyBillAlt,
+            faDog } from '@fortawesome/free-solid-svg-icons'
+//
 import Layout from '../components/Layout'
 import Gallery_1_2 from '../elements/Gallery_1_2'
 import GalleryHscroll from '../elements/GalleryHscroll'
@@ -218,25 +234,106 @@ const Rooms = () => (
         <section className="section">
             <div className="container">
                 <h2 className="subtitle is-size-4 has-text-centered">
-                    お部屋の設備・ルール
+                    お部屋の設備
                 </h2>
                 <hr />
                 <p className="has-text-centered">
                     「アパス」「グアダルーペ」共通
                 </p>
 
+                <div className="columns is-mobile is-multiline margin-top-2">
+                    <div className="column is-size-5 is-half-mobile">
+                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> キッチン</span>
+                        <p>共用キッチン利用可</p>
+                        <br />
+                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ペット</span>
+                        <p>ペットの宿泊不可</p>
+                        <br />
+                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle"> Wifi</span>
+                        <p>WiFi無料</p>
+                    </div>
+
+                    <div className="column is-size-5 is-half-mobile">
+                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> サービス</span>
+                        <p>専用チェックイン / チェックアウト</p>
+                        <br />
+                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ランドリー</span>
+                        <p>洗濯サービスは格安にて承ります</p>
+                        <br />
+                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle"> 駐車場</span>
+                        <p>駐車スペースは1日20PHPにてご利用できます</p>
+                    </div>
+
+                    <div className="column is-size-5 is-half-mobile">
+                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> その他</span>
+                        <p>分煙・喫煙スペース有</p>
+                        <p>エアコン</p>
+                        <p>防音ルーム</p>
+                        <p>禁煙スペース有</p>
+                        <br />
+                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> 対応言語</span>
+                        <p>英語 / 日本語</p>
+                    </div>
+                    
+                    
+                </div>
                 <div className="columns is-centered margin-top-2">
-                    <div className="column is-4 is-6-mobile">
-                        <span className="icon">
-                            <i className="fas fa-home"></i>
-                        </span>
+                    <div className="column">
+                        
                     </div>
-                    <div className="column is-4">
-                        b
+                </div>
+            </div>
+        </section>
+
+
+        <section className="section">
+            <div className="container">
+                <h2 className="subtitle is-size-4 has-text-centered">
+                    宿泊のルール
+                </h2>
+                <hr />
+                <p className="has-text-centered">
+                    「アパス」「グアダルーペ」共通
+                </p>
+
+                <div className="columns is-mobile is-multiline margin-top-2">
+                    <div className="column is-size-5 is-half-mobile">
+                        <FontAwesomeIcon icon={faSuitcaseRolling} /><span className="subtitle"> チェックイン/ チェックアウト</span>
+                        
+                        <p><br />チェックイン :<br /> 1:00 PM - 7:00 PM</p>
+                        <br />
+                        <p>チェックアウト :<br /> 11:00 AM - 12:00 PM</p>
+                        <br />
+                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ペット</span>
+                        <p>ペットの宿泊不可</p>
+                        <br />
+                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle"> Wifi</span>
+                        <p>WiFi無料</p>
                     </div>
-                    <div className="column is-4">
-                        c
+
+                    <div className="column is-size-5 is-half-mobile">
+                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> サービス</span>
+                        <p>専用チェックイン / チェックアウト</p>
+                        <br />
+                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ランドリー</span>
+                        <p>洗濯サービスは格安にて承ります</p>
+                        <br />
+                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle"> 駐車場</span>
+                        <p>駐車スペースは1日20PHPにてご利用できます</p>
                     </div>
+
+                    <div className="column is-size-5 is-half-mobile">
+                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> その他</span>
+                        <p>分煙・喫煙スペース有</p>
+                        <p>エアコン</p>
+                        <p>防音ルーム</p>
+                        <p>禁煙スペース有</p>
+                        <br />
+                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> 対応言語</span>
+                        <p>英語 / 日本語</p>
+                    </div>
+                    
+                    
                 </div>
                 <div className="columns is-centered margin-top-2">
                     <div className="column">
