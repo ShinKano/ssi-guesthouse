@@ -10,6 +10,13 @@ import apas_out from '../img/apas_out.jpg'
 import apas_living from '../img/apas_living.jpg'
 import cebu_city001 from '../img/cebu_city001.jpg'
 import apas_single002 from '../img/apas_single002.jpg'
+import guadalupe_header from '../img/guadalupe_header.jpg'
+import guadalupe_living003 from '../img/guadalupe_living003.jpg'
+import guadalupe_living004 from '../img/guadalupe_living004.jpg'
+import guadalupe_living005 from '../img/guadalupe_living005.jpg'
+import guadalupe_entrance002 from '../img/guadalupe_entrance002.jpg'
+import guadalupe_single001 from '../img/guadalupe_single001.jpg'
+import guests002 from '../img/guests002.jpg'
 
 const Rooms = () => (
 
@@ -25,12 +32,12 @@ const Rooms = () => (
         </section>
 
         <section>
-            <figure className="image is-3by1">
+            <figure className="image is-3by1" id="apas">
                 <img src={apas_header} />
             </figure>
         </section>
 
-        <section className="section" id="apas">
+        <section className="section">
             <div className="container">
                 <h2 className="subtitle is-size-4 has-text-centered">
                     セブ・アパス
@@ -106,34 +113,35 @@ const Rooms = () => (
 
 
         <section>
-            <figure className="image is-3by1">
-                <img src={apas_header} />
+            <figure className="image is-3by1" id="guadalupe">
+                <img src={guadalupe_header} />
             </figure>
         </section>
 
-        <section className="section" id="apas">
+        <section className="section">
             <div className="container">
                 <h2 className="subtitle is-size-4 has-text-centered">
                     セブ・グアダルーペ
                 </h2>
                 <hr />
                 <p className="has-text-centered">
-                    活気に満ちたセブ島の中心地で便利に滞在。
+                    落ち着いてリラックスできるセブの邸宅に滞在。
                 </p>
 
                 <div className="columns is-centered margin-top-2">
                     <div className="column is-8">
                         <p className="is-size-6 margin-bottom">
-                            賑やかなセブの中心地にある「ストーリーシェア・アパス」は、
-                            セブで一番大きな「アヤラ・ショッピングモール」や「ガイサノモール」など、
-                            ショッピングや普段のお買い物にとても便利なエリアにあります。
+                            ゲストハウスストーリーシェア「グアダルーペ」は賑やかなセブの中心地から少しだけ離れた場所にあります。
+                            静かで落ち着ける場所にありますので、リラックスした環境をお求めのお客様にご好評いただいています。
+                            <br /><br />
+                            大きな共用リビングルームにはエアコンも完備。観葉植物のグリーンに囲まれながら、心ゆくまでリラックスしていただけます。
                             <br /><br />
                             カフェやローカルレストランも近くにあるので、地元のフィリピンフードも存分に楽しむことができます。
                         </p>
                         <Gallery_1_2
-                            img1={apas_living}
-                            img2={apas_out}
-                            img3={cebu_city001}
+                            img1={guadalupe_entrance002}
+                            img2={guadalupe_living003}
+                            img3={guadalupe_living004}
                         />
                     </div>
                 </div>
@@ -174,14 +182,14 @@ const Rooms = () => (
                     </div>
                     <div className="column is-7">
                         <figure className="image">
-                            <img className="border-radius" src={apas_single002} alt="apas single room" />
+                            <img className="border-radius" src={guadalupe_single001} alt="guadalupe single room" />
                         </figure>
                     </div>
                 </div>
             </div>
         </section>
         <GalleryHscroll 
-            images={[apas_out, apas_single002, apas_living, apas_header]}
+            images={[guadalupe_living003,guadalupe_living004,guadalupe_living005,guadalupe_single001]}
         />
 
 
