@@ -1,7 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
-import Button from '../../elements/Button'
 
 function encode(data) {
   return Object.keys(data)
@@ -40,7 +39,7 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>お問い合わせ</h1>
+              <h1>ご予約・お問い合わせ</h1>
               <form
                 name="contact"
                 method="post"
@@ -87,6 +86,55 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
+
+                <div className="field">
+                  <label className="label" htmlFor={'email'}>
+                    チェックイン希望日（ご予約の場合）
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'date'}
+                      name={'checkin'}
+                      onChange={this.handleChange}
+                      id={'checkin'}
+                      required={false}
+                    />
+                  </div>
+                </div>
+
+                <div className="field">
+                  <label className="label" htmlFor={'email'}>
+                    チェックアウト希望日（ご予約の場合）
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'date'}
+                      name={'checkout'}
+                      onChange={this.handleChange}
+                      id={'checkout'}
+                      required={false}
+                    />
+                  </div>
+                </div>
+
+                <div className="field">
+                  <label className="label" htmlFor={'email'}>
+                    宿泊する人数（ご予約の場合）
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'number'}
+                      name={'people'}
+                      onChange={this.handleChange}
+                      id={'people'}
+                      required={false}
+                    />
+                  </div>
+                </div>
+
                 <div className="field">
                   <label className="label" htmlFor={'message'}>
                     お問い合わせ内容
@@ -98,6 +146,7 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'message'}
                       required={true}
+                      placeholder="予約したい / 空き状況の確認がしたい etc..."
                     />
                   </div>
                 </div>
