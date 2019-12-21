@@ -25,13 +25,14 @@ import apas_header from '../img/apas-header.jpg'
 import apas_out from '../img/apas_out.jpg'
 import apas_living from '../img/apas_living.jpg'
 import cebu_city001 from '../img/cebu_city001.jpg'
+import apas_single001 from '../img/apas_single001.jpg'
 import apas_single002 from '../img/apas_single002.jpg'
 import guadalupe_header from '../img/guadalupe_header.jpg'
 import guadalupe_living003 from '../img/guadalupe_living003.jpg'
 import guadalupe_living004 from '../img/guadalupe_living004.jpg'
 import guadalupe_living005 from '../img/guadalupe_living005.jpg'
 import guadalupe_entrance002 from '../img/guadalupe_entrance002.jpg'
-import guadalupe_single from '../img/guadalupe_single.jpg'
+import guadalupe_single002 from '../img/guadalupe_single002.jpg'
 import guadalupe_double from '../img/guadalupe_double.jpg'
 
 const Rooms = () => (
@@ -109,7 +110,7 @@ const Rooms = () => (
                             シングルルーム
                         </h3>
                         <p className="is-size-5">
-                            850PHP/1泊
+                            800PHP/1泊
                         </p>
                         <ButtonEx
                             href="https://booking.com/hotel/ph/story-share-inc.html"
@@ -128,10 +129,12 @@ const Rooms = () => (
                     </div>
                     <div className="column is-7">
                         <figure className="image">
-                            <img className="border-radius" src={apas_single002} alt="apas single room" />
+                            <img className="border-radius" src={apas_single001} alt="apas single room" />
                         </figure>
                     </div>
                 </div>
+
+                
             </div>
         </section>
         <GalleryHscroll 
@@ -151,6 +154,9 @@ const Rooms = () => (
                 <h2 className="subtitle is-size-4 has-text-centered">
                     セブ・グアダルーペ
                 </h2>
+                <h2 className="subtitle is-size-5 has-text-centered">
+                    日本語禁止（英語オンリー）
+                </h2>
                 <hr />
                 <p className="has-text-centered">
                     落ち着いてリラックスできるセブの邸宅に滞在。
@@ -160,11 +166,13 @@ const Rooms = () => (
                     <div className="column is-8">
                         <p className="is-size-6 margin-bottom">
                             ゲストハウスストーリーシェア「グアダルーペ」は賑やかなセブの中心地から少しだけ離れた場所にあります。
-                            静かで落ち着ける場所にありますので、リラックスした環境をお求めのお客様にご好評いただいています。
+                            <strong>日本語禁止・イングリッシュオンリー（EOP）ですので、ゲストの方は国籍に関わらず英語で会話をします。</strong>
+                            そのため、海外のゲスト同士での交流がとても盛んになっています。
                             <br /><br />
+                            また、静かで落ち着ける場所にありますので、リラックスした環境をお求めのお客様にご好評いただいています。
                             大きな共用リビングルームにはエアコンも完備。観葉植物のグリーンに囲まれながら、心ゆくまでリラックスしていただけます。
                             <br /><br />
-                            カフェやローカルレストランも近くにあるので、地元のフィリピンフードも存分に楽しむことができます。
+                            イギリス人経営のお洒落なカフェやローカルレストランも近くにあるので、地元のフィリピンフードも存分に楽しむことができます。
                         </p>
                         <Gallery_1_2
                             img1={guadalupe_entrance002}
@@ -225,7 +233,7 @@ const Rooms = () => (
                     </div>
                     <div className="column is-7">
                         <figure className="image">
-                            <img className="border-radius" src={guadalupe_single} alt="guadalupe single room" />
+                            <img className="border-radius" src={guadalupe_single002} alt="guadalupe single room" />
                         </figure>
                     </div>
                 </div>
@@ -329,9 +337,9 @@ const Rooms = () => (
                     <div className="column is-size-5 is-half-mobile">
                         <FontAwesomeIcon icon={faSuitcaseRolling} /><span className="subtitle"> チェックイン/ チェックアウト</span>
                         
-                        <p><br />チェックイン :<br /> 1:00 PM - 7:00 PM</p>
+                        <p><br />チェックイン :<br /> 3:00 PM - 7:00 PM</p>
                         <br />
-                        <p>チェックアウト :<br /> 11:00 AM - 12:00 PM</p>
+                        <p>チェックアウト :<br /> 10:00 AM</p>
                         <br />
                         <FontAwesomeIcon icon={faGlassCheers} /><span className="subtitle"> 年齢制限なし</span>
                         <p>ゲストの年齢制限はありません</p>
@@ -342,7 +350,7 @@ const Rooms = () => (
                         <FontAwesomeIcon icon={faBaby} /><span className="subtitle"> お子様とベッド</span>
                         <p>お子様も宿泊できます</p>
                         <p>ベビーベッドのご用意はありません</p>
-                        <p>エクストラベッドのご用意はありません</p>
+                        <p>エクストラベッドは200PHP（１名）です</p>
                         <br />
                         <FontAwesomeIcon icon={faBan} /><span className="subtitle"> キャンセル / お支払い</span>
                         <p>キャンセルについてはお部屋によって異なりますので. ご予約の際にお問い合わせください。</p>
@@ -350,7 +358,7 @@ const Rooms = () => (
 
                     <div className="column is-size-5 is-half-mobile">
                         <FontAwesomeIcon icon={faMoneyBillAlt} /><span className="subtitle"> 現金のみ</span>
-                        <p>現金でのお支払いのみ可能です</p>
+                        <p>現金（ペソ）でのお支払いのみ可能です</p>
                         <br />
                         <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ペット</span>
                         <p>ペットのお持ち込み不可</p>
