@@ -107,29 +107,104 @@ const Rooms = () => (
                 <div className="columns">
                     <div className="column is-5 has-text-centered max-width-1">
                         <h3 className="subtitle is-size-4">
-                            シングルルーム
+                            宿泊料金
                         </h3>
-                        <p className="is-size-5">
-                            800PHP/1泊
-                        </p>
-                        <ButtonEx
-                            href="https://booking.com/hotel/ph/story-share-inc.html"
-                            text="Booking.comで予約"
-                        />
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <p className="subtitle is-size-5">
+                                    シングルルーム
+                                </p>
+                            </div>
+                            <div className="column">
+                                <p className="is-size-5">
+                                    800PHP/泊
+                                </p>
+                            </div>
+                        </div>
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <h3 className="subtitle is-size-5">
+                                    格安シングル
+                                </h3>
+                            </div>
+                            <div className="column">
+                                <p className="is-size-5">
+                                    650PHP/泊
+                                </p>
+                            </div>
+                        </div>
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <ButtonEx
+                                    href="https://booking.com/hotel/ph/story-share-inc.html"
+                                    text="Booking.comで予約"
+                                />
+                                
+                            </div>
+                            <div className="column">
+                                <Button
+                                    to="/contact"
+                                    text="直接予約する"
+                                    green={true}
+                                />
+                            </div>
+                        </div>
                         <p>
                             予約サイトの価格が高いですか？<br />
                             直接のご予約で、上記料金を適用できます。
                         </p>
-                        <Button
-                            to="/contact"
-                            text="直接このサイトで予約"
-                            green={true}
-                        />
-
                     </div>
+
                     <div className="column is-7">
                         <figure className="image">
                             <img className="border-radius" src={apas_single001} alt="apas single room" />
+                        </figure>
+                    </div>
+                </div>
+
+                <div className="columns margin-top-2">
+                    <div className="column is-5 has-text-centered max-width-1">
+                        <h3 className="subtitle is-size-4">
+                            宿泊料金
+                        </h3>
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <p className="subtitle is-size-5">
+                                    ツインルーム
+                                </p>
+                            </div>
+                            <div className="column">
+                                <p className="is-size-5">
+                                    1000PHP/泊
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <ButtonEx
+                                    href="https://booking.com/hotel/ph/story-share-inc.html"
+                                    text="Booking.comで予約"
+                                />
+                                
+                            </div>
+                            <div className="column">
+                                <Button
+                                    to="/contact"
+                                    text="直接予約する"
+                                    green={true}
+                                />
+                            </div>
+                        </div>
+                        <p>
+                            予約サイトの価格が高いですか？<br />
+                            直接のご予約で、上記料金を適用できます。
+                        </p>
+                        
+                    </div>
+                    <div className="column is-7">
+                        <figure className="image">
+                            <img className="border-radius" src={guadalupe_double} alt="guadalupe twin room" />
                         </figure>
                     </div>
                 </div>
@@ -212,24 +287,53 @@ const Rooms = () => (
                 <div className="columns">
                     <div className="column is-5 has-text-centered max-width-1">
                         <h3 className="subtitle is-size-4">
-                            シングルルーム
+                            宿泊料金
                         </h3>
-                        <p className="is-size-5">
-                            850PHP/1泊
-                        </p>
-                        <ButtonEx
-                            href="https://www.booking.com/hotel/ph/storyshare-inc-guesthouse.html"
-                            text="Booking.comで予約"
-                        />
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <p className="subtitle is-size-5">
+                                    シングルルーム
+                                </p>
+                            </div>
+                            <div className="column">
+                                <p className="is-size-5">
+                                    700PHP/泊
+                                </p>
+                            </div>
+                        </div>
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <h3 className="subtitle is-size-5">
+                                    格安シングル
+                                </h3>
+                            </div>
+                            <div className="column">
+                                <p className="is-size-5">
+                                    550PHP/泊
+                                </p>
+                            </div>
+                        </div>
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <ButtonEx
+                                    href="https://www.booking.com/hotel/ph/storyshare-inc-guesthouse.html"
+                                    text="Booking.comで予約"
+                                />
+                                
+                            </div>
+                            <div className="column">
+                                <Button
+                                    to="/contact"
+                                    text="直接予約する"
+                                    green={true}
+                                />
+                            </div>
+                        </div>
                         <p>
                             予約サイトの価格が高いですか？<br />
                             直接のご予約で、上記料金を適用できます。
                         </p>
-                        <Button
-                            to="/contact"
-                            text="直接このサイトで予約"
-                            green={true}
-                        />
+
                     </div>
                     <div className="column is-7">
                         <figure className="image">
@@ -240,24 +344,42 @@ const Rooms = () => (
                 <div className="columns margin-top-2">
                     <div className="column is-5 has-text-centered max-width-1">
                         <h3 className="subtitle is-size-4">
-                            ツインルーム
+                            宿泊料金
                         </h3>
-                        <p className="is-size-5">
-                            850PHP/1泊
-                        </p>
-                        <ButtonEx
-                            href="https://www.booking.com/hotel/ph/storyshare-inc-guesthouse.html"
-                            text="Booking.comで予約"
-                        />
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <p className="subtitle is-size-5">
+                                    ツインルーム
+                                </p>
+                            </div>
+                            <div className="column">
+                                <p className="is-size-5">
+                                    900PHP/泊
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div className="columns is-mobile">
+                            <div className="column">
+                                <ButtonEx
+                                    href="https://www.booking.com/hotel/ph/storyshare-inc-guesthouse.html"
+                                    text="Booking.comで予約"
+                                />
+                                
+                            </div>
+                            <div className="column">
+                                <Button
+                                    to="/contact"
+                                    text="直接予約する"
+                                    green={true}
+                                />
+                            </div>
+                        </div>
                         <p>
                             予約サイトの価格が高いですか？<br />
                             直接のご予約で、上記料金を適用できます。
                         </p>
-                        <Button
-                            to="/contact"
-                            text="直接このサイトで予約"
-                            green={true}
-                        />
+                        
                     </div>
                     <div className="column is-7">
                         <figure className="image">
