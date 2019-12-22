@@ -104,11 +104,9 @@ const Rooms = () => (
 
         <section className="section">
             <div className="container">
+                        
                 <div className="columns">
                     <div className="column is-5 has-text-centered max-width-1">
-                        <h3 className="subtitle is-size-4">
-                            宿泊料金
-                        </h3>
                         <div className="columns is-mobile">
                             <div className="column">
                                 <p className="subtitle is-size-5">
@@ -164,9 +162,7 @@ const Rooms = () => (
 
                 <div className="columns margin-top-2">
                     <div className="column is-5 has-text-centered max-width-1">
-                        <h3 className="subtitle is-size-4">
-                            宿泊料金
-                        </h3>
+                        
                         <div className="columns is-mobile">
                             <div className="column">
                                 <p className="subtitle is-size-5">
@@ -286,9 +282,7 @@ const Rooms = () => (
             <div className="container">
                 <div className="columns">
                     <div className="column is-5 has-text-centered max-width-1">
-                        <h3 className="subtitle is-size-4">
-                            宿泊料金
-                        </h3>
+
                         <div className="columns is-mobile">
                             <div className="column">
                                 <p className="subtitle is-size-5">
@@ -343,9 +337,7 @@ const Rooms = () => (
                 </div>
                 <div className="columns margin-top-2">
                     <div className="column is-5 has-text-centered max-width-1">
-                        <h3 className="subtitle is-size-4">
-                            宿泊料金
-                        </h3>
+
                         <div className="columns is-mobile">
                             <div className="column">
                                 <p className="subtitle is-size-5">
