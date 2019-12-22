@@ -34,7 +34,7 @@ const Hero = () => {
                             <span className="inline-block">日本人経営ゲストハウス</span>
                         </h2>
                         <Button 
-                            to="/book"
+                            to="/contact"
                             text="予約はコチラ！"
                         />
                     </div>

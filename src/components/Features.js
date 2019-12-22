@@ -1,6 +1,5 @@
 import React from 'react'
 //
-import about from '../img/bg-1.jpg'
 import food from '../img/food.jpg'
 import guests from '../img/guests.jpg'
 import eop from '../img/eop.jpg'
