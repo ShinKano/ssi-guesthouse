@@ -20,6 +20,7 @@ import Gallery_1_2 from '../elements/Gallery_1_2'
 import GalleryHscroll from '../elements/GalleryHscroll'
 import Button from '../elements/Button'
 import ButtonEx from '../elements/ButtonEx'
+import GoogleMap from '../elements/GoogleMap'
 //
 import apas_header from '../img/apas-header.jpg'
 import apas_out from '../img/apas_out.jpg'
@@ -34,6 +35,7 @@ import guadalupe_living005 from '../img/guadalupe_living005.jpg'
 import guadalupe_entrance002 from '../img/guadalupe_entrance002.jpg'
 import guadalupe_single002 from '../img/guadalupe_single002.jpg'
 import guadalupe_double from '../img/guadalupe_double.jpg'
+
 
 const Rooms = () => (
 
@@ -208,10 +210,13 @@ const Rooms = () => (
                 
             </div>
         </section>
-        <GalleryHscroll 
+        <GalleryHscroll
             images={[apas_out, apas_single002, apas_living, apas_header]}
         />
 
+        <GoogleMap
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.0314941896636!2d123.90291771420006!3d10.33936469261902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a998de64afaebf%3A0x7f489632ffbf423c!2sStoryshare%20Apas!5e0!3m2!1sen!2sjp!4v1577014737639!5m2!1sen!2sjp"
+        />
 
 
         <section>
@@ -385,6 +390,9 @@ const Rooms = () => (
             images={[guadalupe_living003,guadalupe_living004,guadalupe_living005,]}
         />
 
+        <GoogleMap
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3925.277346410621!2d123.88376981419985!3d10.319674892632456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999352d8b3def%3A0xd057d1a06a7901fc!2z44K544OI44O844Oq44O844K344Kn44KiIOiLseiqnuWtpuagoe-8huOCsuOCueODiOODj-OCpuOCuSDml6XmnKzoqp7lrozlhajnpoHmraLmoKHoiI4!5e0!3m2!1sen!2sjp!4v1577015718949!5m2!1sen!2sjp"
+        />
 
         <section className="section">
             <div className="container">
