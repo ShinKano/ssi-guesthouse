@@ -45,7 +45,7 @@ const TemplateWrapper = ({ children }) => {
         
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
-        <meta property="og:url" content="/" />
+        <meta property="og:url" content="https://www.ss-guesthouse.com/" />
         <meta
           property="og:image"
           content={`${withPrefix('/')}img/og-image.png`}
