@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
 title: Booking.com ゲスト・レビュー・アワードを受賞しました！
-date: 2019-12-23T00:44:15.088Z
+date: 2019-12-23T13:22:15.088Z
 description: >-
   Booking.comでクチコミ・レビューが高評価な宿泊施設として、ゲストハウスストーリーシェアが表彰されました。今回、このように非常に名誉ある賞をいただけて、スタッフ一同嬉しく思っています。
-featuredpost: true
+featuredpost: false
 featuredimage: /img/booking-award01.jpg
 tags:
   - News
