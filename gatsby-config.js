@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Guesthouse Storyshare (ゲストハウス ストーリーシェア)',
+    title: 'Guesthouse Storyshare (ゲストハウス ストーリーシェア)【公式】',
     description:
-      'フィリピン・セブ島・バギオに展開するゲストハウスです。旅人やバックパッカーの安心で安全な旅をサポートします。',
+      'フィリピン・セブ島・バギオに展開するゲストハウス。完全個室・専用バスルーム付きで旅人やバックパッカーの安心で安全な旅をサポート。格安でセブの中心地に滞在するならココ！',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
