@@ -8,7 +8,7 @@ import apas_single001 from '../img/apas_single001.jpg'
 import apas_kitchen from '../img/apas_kitchen.jpg'
 import guadalupe_out from '../img/guadalupe_out.jpg'
 import guadalupe_single002 from '../img/guadalupe_single002.jpg'
-import guadalupe_living002 from '../img/guadalupe_living002.jpg'
+import guadalupe_living001 from '../img/guadalupe_living001.jpg'
 
 
 
@@ -53,7 +53,7 @@ const Locations = () => {
                 <div className="columns reverse margin-top-2">
                     <div className="column is-6">
                         <Gallery_1_2
-                            img1={guadalupe_living002}
+                            img1={guadalupe_living001}
                             img2={guadalupe_single002}
                             img3={guadalupe_out}
                         />
