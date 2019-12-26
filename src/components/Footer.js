@@ -30,11 +30,11 @@ const Footer = class extends React.Component {
                     <li>
                       <a
                         className="navbar-item footer-item"
-                        href="/admin/"
+                        href="/calender"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        管理者
+                        セブのイベント情報
                       </a>
                     </li>
                   </ul>
