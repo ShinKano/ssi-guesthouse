@@ -44,7 +44,7 @@ const Jan = () => {
             desc1: "「サントニーニョ」と呼ばれる、子供の姿をしたキリストを称えてお祝いをするお祭りです。サントニーニョ像は大航海時代にマゼランがセブ島に上陸した際、当時のセブ王へ贈ったものとされています。",
             desc2: "シヌログ祭では、パレードや出店が通りを埋め尽くし、豪華展覧なダンスや、ド派手なパフォーマンスがストリートを埋め尽くします。キリスト教が広く普及しているセブの年に1度のビッグイベントです！",
             image: sinulog01,
-            link: "https://www.travelwith.jp/roadtraveler/post-21863/"
+            link: "https://www.ss-guesthouse.com/blog/2019-12-28-%E3%82%B7%E3%83%8C%E3%83%AD%E3%82%B0%E7%A5%AD%E3%81%A8%E3%81%AF%EF%BC%9F2020%E3%81%AE%E5%85%A8%E6%97%A5%E7%A8%8B%E3%83%BB%E3%82%B9%E3%82%B1%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AF%E3%82%B3%E3%83%81%E3%83%A9%EF%BC%81%E3%80%90sinulog2020%E3%80%91/"
         },
         {
             name: "Cebu International Beach Festival",
