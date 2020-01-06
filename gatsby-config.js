@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Guesthouse Storyshare(セブ島のゲストハウス ストーリーシェア)【公式】',
+    title: 'セブ島のゲストハウスならストーリーシェア【公式】（Guesthouse Storyshare）',
     description:
-      'フィリピン・セブ島・バギオに展開するゲストハウス。完全個室・専用バスルーム付きで旅人やバックパッカーの安心で安全な旅をサポート。格安でセブの中心地に滞在するならココ！',
+      'フィリピン・セブ島・バギオに展開するゲストハウス。完全個室・専用バスルーム付きで旅人やバックパッカーの安心で安全な旅をサポート。格安ホテルより自由で過ごしやすい！',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
