@@ -10,6 +10,7 @@ exports.components = {
   "component---cache-dev-404-page-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/404.js"))),
   "component---src-pages-blog-index-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/blog/index.js"))),
+  "component---src-pages-calender-2020-feb-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/calender/2020/Feb.js"))),
   "component---src-pages-calender-2020-jan-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/calender/2020/Jan.js"))),
   "component---src-pages-calender-index-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/calender/index.js"))),
   "component---src-pages-contact-file-upload-js": hot(preferDefault(require("/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/pages/contact/file-upload.js"))),
