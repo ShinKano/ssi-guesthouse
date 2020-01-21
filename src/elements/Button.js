@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
+import { Link } from "gatsby-plugin-intl"
 
 const Button = (props) => (
     <div className="field">

@@ -1,4 +1,7 @@
 module.exports = [{
+      plugin: require('../node_modules/gatsby-plugin-intl/gatsby-browser.js'),
+      options: {"plugins":[],"path":"/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/intl","languages":["en","ja"],"defaultLanguage":"ja","redirect":false},
+    },{
       plugin: require('../node_modules/gatsby-plugin-google-analytics/gatsby-browser.js'),
       options: {"plugins":[],"trackingId":"UA-83299337-3","head":true,"exclude":["/preview/**","/do-not-track/me/too/"],"pageTransitionDelay":0},
     },{

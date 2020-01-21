@@ -3,22 +3,22 @@ import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
-import useSiteMetadata from './SiteMetadata'
-
 import { withPrefix } from 'gatsby'
+import { useIntl } from 'gatsby-plugin-intl'
+
 //
 
 
 const TemplateWrapper = ({ children }) => {
-  
-  const { title, description } = useSiteMetadata()
+  const intl = useIntl()
+  //const { title, description } = useSiteMetadata()
   return (
     <div>
       <Helmet>
         
         <html />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <title>{intl.formatMessage({ id: "title" })}</title>
+        <meta name="description" content={intl.formatMessage({ id: "description" })} />
 
         <link
           rel="apple-touch-icon"
@@ -46,7 +46,7 @@ const TemplateWrapper = ({ children }) => {
         <meta name="theme-color" content="#fff" />
         
         <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={intl.formatMessage({ id: "title" })} />
         <meta property="og:url" content="https://www.ss-guesthouse.com/" />
         <meta
           property="og:image"

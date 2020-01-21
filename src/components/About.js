@@ -1,9 +1,11 @@
 import React from 'react'
+import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
 //
 import about from '../img/bg-1.jpg'
 
 
 const About = () => {
+    const intl = useIntl()
     return (
         <section className="section">
             <div className="container">
@@ -13,8 +15,12 @@ const About = () => {
                     </div>
                     <div className="column">
                         <h2 className="title has-text-centered">
-                            <span className="inline-block">出会いのある旅は、</span>
-                            <span className="inline-block">素敵だ。</span>
+                            <span className="inline-block">
+                                <FormattedMessage id="about-heading01" />
+                            </span>
+                            <span className="inline-block">
+                                <FormattedMessage id="about-heading02" />
+                            </span>
                         </h2>
                     </div>
                 </div>
@@ -24,16 +30,15 @@ const About = () => {
                     </div>
                     <div className="column max-width-1">
                         <p>
-                            リゾートホテルやシティホステルにはない、
-                            特別な魅力がいっぱいの「ゲストハウス・ストーリーシェア」がフィリピンのセブ島に誕生しました。
-                            <br /><br />
-                            ホテルのように、高級なベッドやルームサービスはありませんが、
-                            その分格安で、温かみのあるご滞在のサポートを心がけています。
-                            <br /><br />
-                            ゲストハウスは語学学校に併設していますので、英語ができない方でも安心です。
-                            外国人ゲストやバックパッカー、旅人も大勢いらっしゃいますので、出会いに溢れた空間になっています。
+                            {intl.formatMessage({ id: "about-text01" })}
                         </p>
-                       
+                        <p className="margin-top">
+                            
+                            {intl.formatMessage({ id: "about-text02" })}
+                        </p>
+                        <p className="margin-top">
+                            {intl.formatMessage({ id: "about-text02" })}
+                        </p>
                     </div>
                 </div>
             </div>

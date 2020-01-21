@@ -5,6 +5,9 @@ var plugins = [{
       plugin: require('/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/node_modules/gatsby-plugin-intl/gatsby-ssr'),
+      options: {"plugins":[],"path":"/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/src/intl","languages":["en","ja"],"defaultLanguage":"ja","redirect":false},
+    },{
       plugin: require('/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":"UA-83299337-3","head":true,"exclude":["/preview/**","/do-not-track/me/too/"],"pageTransitionDelay":0},
     },{

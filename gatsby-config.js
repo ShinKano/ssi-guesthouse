@@ -9,6 +9,19 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-styled-components',
     {
+        resolve: `gatsby-plugin-intl`,
+        options: {
+          // language JSON resource path
+          path: `${__dirname}/src/intl`,
+          // supported language
+          languages: [`en`, `ja`,],
+          // language file path
+          defaultLanguage: `ja`,
+          // option to redirect to `/ko` when connecting `/`
+          redirect: false,
+        },
+    },
+    {
         resolve: `gatsby-plugin-google-analytics`,
         options: {
           trackingId: "UA-83299337-3",
