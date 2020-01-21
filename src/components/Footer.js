@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
+//import { Link } from 'gatsby'
+import { Link, FormattedMessage } from "gatsby-plugin-intl"
+//
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
@@ -23,7 +24,7 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                     <li>
                       <Link to="/" className="navbar-item footer-item">
-                        ホーム
+                        <FormattedMessage id="home" />
                       </Link>
                     </li>
                     
@@ -34,7 +35,7 @@ const Footer = class extends React.Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        セブのイベント情報
+                        <FormattedMessage id="nav03" />
                       </a>
                     </li>
                   </ul>
@@ -45,12 +46,12 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                     <li>
                       <Link className="navbar-item footer-item" to="/blog">
-                        全ての記事
+                        <FormattedMessage id="nav02" />
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item footer-item" to="/contact">
-                        ご予約・お問い合わせ
+                        <FormattedMessage id="book" />
                       </Link>
                     </li>
                   </ul>

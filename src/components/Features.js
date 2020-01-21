@@ -1,4 +1,5 @@
 import React from 'react'
+import { useIntl } from "gatsby-plugin-intl"
 //
 import food from '../img/food.jpg'
 import guests from '../img/guests.jpg'
@@ -9,30 +10,30 @@ import moterbike from '../img/moterbike.jpg'
 
 
 const Features = () => {
-
+    const intl = useIntl()
     const features = [
-        {title: 'レンタルバイク', 
-         desc : '便利なスクーターの貸し出しサービスが利用可能。フィリピン・セブ島の街をすみずみまで探検してみましょう。',
+        {title: intl.formatMessage({ id: "features01-title" }),
+         desc : intl.formatMessage({ id: "features01-desc" }),
          image: moterbike},
         
-        {title: '食事サービス', 
-         desc : 'ご希望の方にはランチやディナーを1食100ペソでご用意します。格安でセブ島のローカル料理をご堪能ください。',
+        {title: intl.formatMessage({ id: "features02-title" }),
+         desc : intl.formatMessage({ id: "features02-desc" }),
          image: food},
         
-        {title: '英語レッスン', 
-         desc : '語学学校が運営するゲストハウスなので、英語レッスンも受けられます。1レッスン350ペソ〜で発音矯正も。',
+        {title: intl.formatMessage({ id: "features03-title" }),
+         desc : intl.formatMessage({ id: "features03-desc" }),
          image: lesson},
         
-        {title: '週末ツアー', 
-         desc : 'ツアーを不定期開催しています。ジンベイサメと泳いだり、滝に飛び込んだりセブのアクティビティを満喫！',
+        {title: intl.formatMessage({ id: "features04-title" }),
+         desc : intl.formatMessage({ id: "features04-desc" }),
          image: activity},
         
-        {title: '人気のEOP', 
-         desc : '2つのハウスのうち１つは英語オンリー。国籍に関わらず全ての人が英語で喋るので、国際交流にピッタリです。',
+        {title: intl.formatMessage({ id: "features05-title" }),
+         desc : intl.formatMessage({ id: "features05-desc" }),
          image: eop},
         
-        {title: '色々な国のゲスト', 
-         desc : 'ゲスト同士での交流や学び合いも盛んです。色々な国のゲストとランゲージエクスチェンジもできちゃいます。',
+        {title: intl.formatMessage({ id: "features06-title" }),
+         desc : intl.formatMessage({ id: "features06-desc" }),
          image: guests},
     ];
 
@@ -42,8 +43,12 @@ const Features = () => {
                 <div className="columns">
                     <div className="column">
                         <h2 className="title has-text-centered">
-                            <span className="inline-block">ストーリーシェアの</span>
-                            <span className="inline-block">特別なサービス</span>
+                            <span className="inline-block">
+                                {intl.formatMessage({ id: "special-features01" })}
+                            </span>
+                            <span className="inline-block">
+                                {intl.formatMessage({ id: "special-features02" })}
+                            </span>
                         </h2>
                     </div>
                 </div>

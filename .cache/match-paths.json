@@ -1,1 +1,202 @@
-[]
+[
+    {
+        "path": "/ja/calender/2020/Jan/",
+        "matchPath": "/ja/calender/2020/Jan/"
+    },
+    {
+        "path": "/en/calender/2020/Jan/",
+        "matchPath": "/en/calender/2020/Jan/"
+    },
+    {
+        "path": "/ja/calender/2020/Feb/",
+        "matchPath": "/ja/calender/2020/Feb/"
+    },
+    {
+        "path": "/en/calender/2020/Feb/",
+        "matchPath": "/en/calender/2020/Feb/"
+    },
+    {
+        "path": "/ja/contact/thanks/",
+        "matchPath": "/ja/contact/thanks/"
+    },
+    {
+        "path": "/en/contact/thanks/",
+        "matchPath": "/en/contact/thanks/"
+    },
+    {
+        "path": "/ja/contact/file-upload/",
+        "matchPath": "/ja/contact/file-upload/"
+    },
+    {
+        "path": "/en/contact/file-upload/",
+        "matchPath": "/en/contact/file-upload/"
+    },
+    {
+        "path": "/ja/tags/news/",
+        "matchPath": "/ja/tags/news/"
+    },
+    {
+        "path": "/en/tags/news/",
+        "matchPath": "/en/tags/news/"
+    },
+    {
+        "path": "/ja/tags/ゲストハウス/",
+        "matchPath": "/ja/tags/ゲストハウス/"
+    },
+    {
+        "path": "/en/tags/ゲストハウス/",
+        "matchPath": "/en/tags/ゲストハウス/"
+    },
+    {
+        "path": "/ja/tags/セブおすすめスポット/",
+        "matchPath": "/ja/tags/セブおすすめスポット/"
+    },
+    {
+        "path": "/en/tags/セブおすすめスポット/",
+        "matchPath": "/en/tags/セブおすすめスポット/"
+    },
+    {
+        "path": "/ja/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/",
+        "matchPath": "/ja/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/"
+    },
+    {
+        "path": "/en/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/",
+        "matchPath": "/en/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/"
+    },
+    {
+        "path": "/ja/blog/2019-12-28-シヌログ祭とは？2020の全日程・スケジュールはコチラ！【sinulog2020】/",
+        "matchPath": "/ja/blog/2019-12-28-シヌログ祭とは？2020の全日程・スケジュールはコチラ！【sinulog2020】/"
+    },
+    {
+        "path": "/en/blog/2019-12-28-シヌログ祭とは？2020の全日程・スケジュールはコチラ！【sinulog2020】/",
+        "matchPath": "/en/blog/2019-12-28-シヌログ祭とは？2020の全日程・スケジュールはコチラ！【sinulog2020】/"
+    },
+    {
+        "path": "/ja/blog/2019-12-27-スターバックス-リザーブ®-がセブのitパークにオープンしました！/",
+        "matchPath": "/ja/blog/2019-12-27-スターバックス-リザーブ®-がセブのitパークにオープンしました！/"
+    },
+    {
+        "path": "/en/blog/2019-12-27-スターバックス-リザーブ®-がセブのitパークにオープンしました！/",
+        "matchPath": "/en/blog/2019-12-27-スターバックス-リザーブ®-がセブのitパークにオープンしました！/"
+    },
+    {
+        "path": "/ja/blog/2019-12-25-セブ島をレンタルバイクで探検しませんか？/",
+        "matchPath": "/ja/blog/2019-12-25-セブ島をレンタルバイクで探検しませんか？/"
+    },
+    {
+        "path": "/en/blog/2019-12-25-セブ島をレンタルバイクで探検しませんか？/",
+        "matchPath": "/en/blog/2019-12-25-セブ島をレンタルバイクで探検しませんか？/"
+    },
+    {
+        "path": "/ja/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/",
+        "matchPath": "/ja/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/"
+    },
+    {
+        "path": "/en/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/",
+        "matchPath": "/en/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/"
+    },
+    {
+        "path": "/ja/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/",
+        "matchPath": "/ja/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/"
+    },
+    {
+        "path": "/en/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/",
+        "matchPath": "/en/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/"
+    },
+    {
+        "path": "/ja/blog/2019-12-25-【セブ島】イギリス人バリスタのカフェ「-nanaymo」wifi有りでオシャレ！/",
+        "matchPath": "/ja/blog/2019-12-25-【セブ島】イギリス人バリスタのカフェ「-nanaymo」wifi有りでオシャレ！/"
+    },
+    {
+        "path": "/en/blog/2019-12-25-【セブ島】イギリス人バリスタのカフェ「-nanaymo」wifi有りでオシャレ！/",
+        "matchPath": "/en/blog/2019-12-25-【セブ島】イギリス人バリスタのカフェ「-nanaymo」wifi有りでオシャレ！/"
+    },
+    {
+        "path": "/ja/blog/2019-12-23-セブで格安ホテルに泊まるならゲストハウスの方が快適かも？/",
+        "matchPath": "/ja/blog/2019-12-23-セブで格安ホテルに泊まるならゲストハウスの方が快適かも？/"
+    },
+    {
+        "path": "/en/blog/2019-12-23-セブで格安ホテルに泊まるならゲストハウスの方が快適かも？/",
+        "matchPath": "/en/blog/2019-12-23-セブで格安ホテルに泊まるならゲストハウスの方が快適かも？/"
+    },
+    {
+        "path": "/ja/blog/2019-12-22-【2020年版】セブでオススメの焼肉屋まとめ！【食べ放題】/",
+        "matchPath": "/ja/blog/2019-12-22-【2020年版】セブでオススメの焼肉屋まとめ！【食べ放題】/"
+    },
+    {
+        "path": "/en/blog/2019-12-22-【2020年版】セブでオススメの焼肉屋まとめ！【食べ放題】/",
+        "matchPath": "/en/blog/2019-12-22-【2020年版】セブでオススメの焼肉屋まとめ！【食べ放題】/"
+    },
+    {
+        "path": "/ja/404.html",
+        "matchPath": "/ja/404.html"
+    },
+    {
+        "path": "/en/404.html",
+        "matchPath": "/en/404.html"
+    },
+    {
+        "path": "/ja/tags/",
+        "matchPath": "/ja/tags/"
+    },
+    {
+        "path": "/en/tags/",
+        "matchPath": "/en/tags/"
+    },
+    {
+        "path": "/ja/rooms/",
+        "matchPath": "/ja/rooms/"
+    },
+    {
+        "path": "/en/rooms/",
+        "matchPath": "/en/rooms/"
+    },
+    {
+        "path": "/ja/contact/",
+        "matchPath": "/ja/contact/"
+    },
+    {
+        "path": "/en/contact/",
+        "matchPath": "/en/contact/"
+    },
+    {
+        "path": "/ja/calender/",
+        "matchPath": "/ja/calender/"
+    },
+    {
+        "path": "/en/calender/",
+        "matchPath": "/en/calender/"
+    },
+    {
+        "path": "/ja/blog/",
+        "matchPath": "/ja/blog/"
+    },
+    {
+        "path": "/en/blog/",
+        "matchPath": "/en/blog/"
+    },
+    {
+        "path": "/ja/dev-404-page/",
+        "matchPath": "/ja/dev-404-page/"
+    },
+    {
+        "path": "/en/dev-404-page/",
+        "matchPath": "/en/dev-404-page/"
+    },
+    {
+        "path": "/ja/",
+        "matchPath": "/ja/"
+    },
+    {
+        "path": "/en/",
+        "matchPath": "/en/"
+    },
+    {
+        "path": "/ja/404/",
+        "matchPath": "/ja/*"
+    },
+    {
+        "path": "/en/404/",
+        "matchPath": "/en/*"
+    }
+]

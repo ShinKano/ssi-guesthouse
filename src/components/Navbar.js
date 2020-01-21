@@ -1,7 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
+//import { Link } from 'gatsby'
+import { Link, FormattedMessage } from "gatsby-plugin-intl"
+
 //
 import logo from '../img/logo.png'
+import Language from '../components/language'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -11,7 +14,6 @@ const Navbar = class extends React.Component {
       navBarActiveClass: '',
     }
   }
-
   toggleHamburger = () => {
     // toggle the active boolean in the state
     this.setState(
@@ -32,6 +34,7 @@ const Navbar = class extends React.Component {
     )
   }
 
+
   render() {
     return (
       <nav
@@ -44,6 +47,9 @@ const Navbar = class extends React.Component {
             <Link to="/" className="navbar-item" title="Logo">
               <img src={logo} alt="logo" />
             </Link>
+
+            <Language />
+
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -61,20 +67,21 @@ const Navbar = class extends React.Component {
           >
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/rooms">
-                お部屋の紹介
+                <FormattedMessage id="nav01" />
               </Link>
               <Link className="navbar-item" to="/blog">
-                すべての記事
+                <FormattedMessage id="nav02" />
               </Link>
               <Link className="navbar-item" to="/calender">
-                セブのイベント
+                <FormattedMessage id="nav03" />
               </Link>
               <Link className="navbar-item" to="/contact">
-                ご予約・お問い合わせ
+                <FormattedMessage id="book" />
               </Link>
             </div>
             
           </div>
+          
         </div>
       </nav>
     )

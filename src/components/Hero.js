@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
 //
 import bgImage from '../img/bg-1.jpg'
 import Button from '../elements/Button'
@@ -15,6 +16,7 @@ const BackgroundImage = styled.section`
 `
 
 const Hero = () => {
+    const intl = useIntl()
     return (
         <BackgroundImage className="section">
             <div className="container">
@@ -29,13 +31,17 @@ const Hero = () => {
                             <span className="inline-block">&nbsp;ストーリーシェア</span>
                         </h2>
                         <h2 className="subtitle color-white">
-                            旅人が集まる
-                            <span className="inline-block">セブ島の</span>
-                            <span className="inline-block">日本人経営ゲストハウス</span>
+                            <FormattedMessage id="hero-subtitle01" />
+                            <span className="inline-block">
+                                <FormattedMessage id="hero-subtitle02" />
+                            </span>
+                            <span className="inline-block">
+                                <FormattedMessage id="hero-subtitle03" />
+                            </span>
                         </h2>
                         <Button 
                             to="/contact"
-                            text="予約はコチラ！"
+                            text={intl.formatMessage({ id: "button-book" })}
                         />
                     </div>
                 </div>
