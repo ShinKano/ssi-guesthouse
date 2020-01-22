@@ -7,8 +7,8 @@ class News extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-
     return (
+        
         <section className="section has-background-classic-blue">
             <h2 className="title has-text-centered color-white">
                 News
@@ -55,6 +55,7 @@ class News extends React.Component {
                 ))}
             </div>
         </section>
+
     )
   }
 }

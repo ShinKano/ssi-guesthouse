@@ -9,10 +9,15 @@ import Locations from '../components/Locations'
 
 import("../../src/index.sass")
 
-const Tetete = () => (
+const Tetete = (props) => {
+
+    // Display blog posts only for Japanese.
+    const isJapanese = (props.path == "/ja/") ? true : false
+
+    return (
     <Layout>
         <Hero />
-        <News />
+        {isJapanese ?  <News /> : "" }
         <div className="margin-top-2" />
         <About />
         <Locations />
@@ -21,6 +26,7 @@ const Tetete = () => (
 
         
     </Layout>
-)
+    )
+}
 
 export default Tetete;
