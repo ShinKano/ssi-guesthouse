@@ -100,6 +100,22 @@
     "cancellations-payment": "キャンセル / お支払い",
     "cancellations-payment-desc": "キャンセルについてはお部屋によって異なりますので. ご予約の際にお問い合わせください。",
     "cash-only": "現金のみ",
-    "cash-only-desc": "現金（ペソ）でのお支払いのみ可能です"
+    "cash-only-desc": "現金（ペソ）でのお支払いのみ可能です",
+    "contact-title": "ご予約・お問い合わせ",
+    "contact-name": "お名前",
+    "contact-checkin-date": "チェックイン希望日（ご予約の場合）",
+    "contact-checkout-date": "チェックアウト希望日（ご予約の場合）",
+    "contact-number-people": "宿泊する人数（ご予約の場合）",
+    "contact-massage": "お問い合わせ内容",
+    "contact-massage-placeholder": "予約したい / 空き情報の確認がしたい etc...",
+    "submit": "送信",
+    "contact-desc01": "上記のお問い合わせボタンより、お気軽にお問い合わせください。 スタッフがあなたのご質問、ご要望にお答えします。",
+    "contact-desc02": "※フィリピンの祝祭日、土日以外、通常24時間以内にお返事しております。",
+    "contact-desc03": "※携帯メールの場合、ご返事をお届けできないケースが増えておりますので、できるだけPCメールをご入力ください。",
+    "contact-desc04": "※もし24時間たっても返信がない場合は、こちらのメールが届かない状態になっている可能性があります。",
+    "contact-desc05": "※メールの設定が拒否設定になっていないか、再度ご確認ください。",
+    "contact-thanks": "ありがとうございます。",
+    "contact-thanks-message01": "ときおり、メール設定の不具合で届かないことがあるようです。",
+    "contact-thanks-message02": "48時間以内に返信がない場合は、お手数ですが各種SNSよりご連絡いただけましたら幸いです。"
 
 }

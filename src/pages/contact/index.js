@@ -1,6 +1,9 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
+import { FormattedMessage } from "gatsby-plugin-intl"
+//
 import Layout from '../../components/Layout'
+
 
 function encode(data) {
   return Object.keys(data)
@@ -39,7 +42,7 @@ export default class Index extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1>ご予約・お問い合わせ</h1>
+              <h1><FormattedMessage id="contact-title" /></h1>
               <form
                 name="contact"
                 method="post"
@@ -58,7 +61,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    お名前
+                    <FormattedMessage id="contact-name" />
                   </label>
                   <div className="control">
                     <input
@@ -89,7 +92,7 @@ export default class Index extends React.Component {
 
                 <div className="field">
                   <label className="label" htmlFor={'email'}>
-                    チェックイン希望日（ご予約の場合）
+                    <FormattedMessage id="contact-checkin-date" />
                   </label>
                   <div className="control">
                     <input
@@ -105,7 +108,7 @@ export default class Index extends React.Component {
 
                 <div className="field">
                   <label className="label" htmlFor={'email'}>
-                    チェックアウト希望日（ご予約の場合）
+                    <FormattedMessage id="contact-checkout-date" />
                   </label>
                   <div className="control">
                     <input
@@ -121,7 +124,7 @@ export default class Index extends React.Component {
 
                 <div className="field">
                   <label className="label" htmlFor={'email'}>
-                    宿泊する人数（ご予約の場合）
+                    <FormattedMessage id="contact-number-people" />
                   </label>
                   <div className="control">
                     <input
@@ -137,7 +140,7 @@ export default class Index extends React.Component {
 
                 <div className="field">
                   <label className="label" htmlFor={'message'}>
-                    お問い合わせ内容
+                    <FormattedMessage id="contact-message" />
                   </label>
                   <div className="control">
                     <textarea
@@ -146,28 +149,31 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'message'}
                       required={true}
-                      placeholder="予約したい / 空き状況の確認がしたい etc..."
+                      placeholder={""}
                     />
                   </div>
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    送信！
+                    <FormattedMessage id="submit" />
                   </button>
                 </div>
               </form>
               
               <p className="margin-top-2">
-                上記のお問い合わせボタンより、お気軽にお問い合わせください。
-                スタッフがあなたのご質問、ご要望にお答えします。 
-                <br /><br />
-                ※フィリピンの祝祭日、土日以外、通常24時間以内にお返事しております。
-                <br />
-                ※携帯メールの場合、ご返事をお届けできないケースが増えておりますので、できるだけPCメールをご入力ください。
-                <br />
-                ※もし24時間たっても返信がない場合は、こちらのメールが届かない状態になっている可能性があります。
-                <br />
-                ※メールの設定が拒否設定になっていないか、再度ご確認ください。
+                <FormattedMessage id="contact-desc01" />
+              </p>
+              <p className="margin-top-2">
+                <FormattedMessage id="contact-desc02" />
+              </p>
+              <p>
+                <FormattedMessage id="contact-desc03" />
+              </p>
+              <p>
+                <FormattedMessage id="contact-desc04" />
+              </p>
+              <p>
+                <FormattedMessage id="contact-desc05" />
               </p>
             </div>
           </div>

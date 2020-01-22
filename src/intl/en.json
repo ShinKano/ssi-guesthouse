@@ -100,6 +100,22 @@
     "cancellations-payment": "Cancellation / Payment",
     "cancellations-payment-desc": "Prepayment policies vary according to apartment type. Please contact us for more info.",
     "cash-only": "Cash Only",
-    "cash-only-desc": "We only accepts cash payments."
+    "cash-only-desc": "We only accepts cash payments.",
+    "contact-title": "Booking & Contact Us",
+    "contact-name": "Name",
+    "contact-checkin-date": "Check-In Date (for booking)",
+    "contact-checkout-date": "Check-Out Date (for booking)",
+    "contact-number-people": "Number of People (for booking)",
+    "contact-message": "Message",
+    "contact-massage-placeholder": "I want to book / Just checking the room avalability etc...",
+    "submit": "Submit",
+    "contact-desc01": "Feel free to contact us from the form above. Your questions will be answered by our Staff.",
+    "contact-desc02": "※ We can send you a response within 24 hours if you send us a message during weekdays except during the Philippine public holidays and during the weekends.",
+    "contact-desc03": "※ If there is no reply even after 24 hours, please check your spam folder.",
+    "contact-desc04": "※ If there is no reply even after 24 hours, please check that the entered email address is correct.",
+    "contact-desc05": "※ You can also send us a message to the Facebook page of Storyshare from the icon at the bottom of this page.",
+    "contact-thanks": "Thank you so much.",
+    "contact-thanks-message01": "Sometime we fail to recieve your message due to some Email setting errors.",
+    "contact-thanks-message02": "In case you don't get any reply in 48 hours, please try to contact us from our Facebook page. Thank you."
 
 }
