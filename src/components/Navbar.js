@@ -72,9 +72,9 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/blog">
                 <FormattedMessage id="nav02" />
               </Link>
-              <Link className="navbar-item" to="/calender">
+              {/* <Link className="navbar-item" to="/calender">
                 <FormattedMessage id="nav03" />
-              </Link>
+              </Link> */}
               <Link className="navbar-item" to="/contact">
                 <FormattedMessage id="book" />
               </Link>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useIntl, FormattedMessage } from "gatsby-plugin-intl"
 //
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {    faUtensils,
@@ -37,14 +38,15 @@ import guadalupe_single002 from '../img/guadalupe_single002.jpg'
 import guadalupe_double from '../img/guadalupe_double.jpg'
 
 
-const Rooms = () => (
-
+const Rooms = () => {
+    const intl = useIntl()
+    return(
     <Layout>
         <section className="section has-background-classic-blue">
             <div className="container">
             <div className="full-height align-items-center">
                     <h1 className="title color-white has-text-centered">
-                        お部屋の紹介
+                        <FormattedMessage id="rooms-title" />
                     </h1>
                 </div>
             </div>
@@ -59,21 +61,20 @@ const Rooms = () => (
         <section className="section">
             <div className="container">
                 <h2 className="subtitle is-size-4 has-text-centered">
-                    セブ・アパス
+                    <FormattedMessage id="cebu-apas" />
                 </h2>
                 <hr />
                 <p className="has-text-centered">
-                    活気に満ちたセブ島の中心地で便利に滞在。
+                    <FormattedMessage id="rooms-apas-subtitle" />
                 </p>
 
                 <div className="columns is-centered margin-top-2">
                     <div className="column is-8">
                         <p className="is-size-6 margin-bottom">
-                            賑やかなセブの中心地にある「ストーリーシェア・アパス」は、
-                            セブで一番大きな「アヤラ・ショッピングモール」や「ガイサノモール」など、
-                            ショッピングや普段のお買い物にとても便利なエリアにあります。
-                            <br /><br />
-                            カフェやローカルレストランも近くにあるので、地元のフィリピンフードも存分に楽しむことができます。
+                            <FormattedMessage id="rooms-apas-text01" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-apas-text02" />
                         </p>
                         <Gallery_1_2
                             img1={apas_living}
@@ -85,18 +86,16 @@ const Rooms = () => (
                 <div className="columns is-centered margin-top-2">
                     <div className="column is-8">
                         <p className="is-size-6 margin-bottom">
-                            お部屋には机と椅子のほか、
-                            エアコンとワードローブも付いています。（喫煙スペースは客室の外にご用意がございます）
-                            <br /><br />
-                            また、広い庭とテラスもゲストハウスストーリーシェアの特徴です。
-                            賑やかなセブの中心地にありながら、落ち着いた雰囲気で快適に過ごしていただけます。
-                            <br /><br />
-                            近くの「ITパーク」と呼ばれるエリアには、レストランやカフェが揃っていますので、食事に困ることはありません。
-                            さらにゆったり落ち着いてリゾートを満喫するなら「キャンプ ラプラプ」という自然いっぱいのエリアに歩いて行くことも可能です。
-                            <br /><br />
-                            ゲストハウスストーリーシェアではバイクスクーターのレンタルもご利用できます。 
-                            もちろん、バイクを使わなくても、タクシーやジプニーがすぐ捕まえられるエリアですので、
-                            どんな場所にも簡単にアクセスできます。
+                            <FormattedMessage id="rooms-apas-text03" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-apas-text04" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-apas-text05" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-apas-text06" />
                         </p>
                     </div>
                 </div>
@@ -112,24 +111,24 @@ const Rooms = () => (
                         <div className="columns is-mobile">
                             <div className="column">
                                 <p className="subtitle is-size-5">
-                                    シングルルーム
+                                    <FormattedMessage id="single-room" />
                                 </p>
                             </div>
                             <div className="column">
                                 <p className="is-size-5">
-                                    800PHP/泊
+                                    800PHP/night
                                 </p>
                             </div>
                         </div>
                         <div className="columns is-mobile">
                             <div className="column">
                                 <h3 className="subtitle is-size-5">
-                                    格安シングル
+                                    <FormattedMessage id="budget-single-room" />
                                 </h3>
                             </div>
                             <div className="column">
                                 <p className="is-size-5">
-                                    650PHP/泊
+                                    650PHP/night
                                 </p>
                             </div>
                         </div>
@@ -137,21 +136,23 @@ const Rooms = () => (
                             <div className="column">
                                 <ButtonEx
                                     href="https://booking.com/hotel/ph/story-share-inc.html"
-                                    text="Booking.comで予約"
+                                    text={intl.formatMessage({ id: "book-via-booking.com" })}
                                 />
                                 
                             </div>
                             <div className="column">
                                 <Button
                                     to="/contact"
-                                    text="直接予約する"
+                                    text={intl.formatMessage({ id: "book-via-this-site" })}
                                     green={true}
                                 />
                             </div>
                         </div>
                         <p>
-                            予約サイトの価格が高いですか？<br />
-                            直接のご予約で、上記料金を適用できます。
+                            <FormattedMessage id="expensive?" />
+                        </p>
+                        <p>
+                            <FormattedMessage id="book-directly" />
                         </p>
                     </div>
 
@@ -168,12 +169,12 @@ const Rooms = () => (
                         <div className="columns is-mobile">
                             <div className="column">
                                 <p className="subtitle is-size-5">
-                                    ツインルーム
+                                    <FormattedMessage id="twin-room" />
                                 </p>
                             </div>
                             <div className="column">
                                 <p className="is-size-5">
-                                    1000PHP/泊
+                                    1000PHP/night
                                 </p>
                             </div>
                         </div>
@@ -182,21 +183,23 @@ const Rooms = () => (
                             <div className="column">
                                 <ButtonEx
                                     href="https://booking.com/hotel/ph/story-share-inc.html"
-                                    text="Booking.comで予約"
+                                    text={intl.formatMessage({ id: "book-via-booking.com" })}
                                 />
                                 
                             </div>
                             <div className="column">
                                 <Button
                                     to="/contact"
-                                    text="直接予約する"
+                                    text={intl.formatMessage({ id: "book-via-this-site" })}
                                     green={true}
                                 />
                             </div>
                         </div>
                         <p>
-                            予約サイトの価格が高いですか？<br />
-                            直接のご予約で、上記料金を適用できます。
+                            <FormattedMessage id="expensive?" />
+                        </p>
+                        <p>
+                            <FormattedMessage id="book-directly" />
                         </p>
                         
                     </div>
@@ -228,27 +231,26 @@ const Rooms = () => (
         <section className="section">
             <div className="container">
                 <h2 className="subtitle is-size-4 has-text-centered">
-                    セブ・グアダルーペ
+                    <FormattedMessage id="cebu-guadalupe" />
                 </h2>
                 <h2 className="subtitle is-size-5 has-text-centered">
-                    日本語禁止（英語オンリー）
+                    <FormattedMessage id="EOP" />
                 </h2>
                 <hr />
                 <p className="has-text-centered">
-                    落ち着いてリラックスできるセブの邸宅に滞在。
+                    <FormattedMessage id="rooms-guadalupe-subtitle" />
                 </p>
 
                 <div className="columns is-centered margin-top-2">
                     <div className="column is-8">
                         <p className="is-size-6 margin-bottom">
-                            ゲストハウスストーリーシェア「グアダルーペ」は賑やかなセブの中心地から少しだけ離れた場所にあります。
-                            <strong>日本語禁止・イングリッシュオンリー（EOP）ですので、ゲストの方は国籍に関わらず英語で会話をします。</strong>
-                            そのため、海外のゲスト同士での交流がとても盛んになっています。
-                            <br /><br />
-                            また、静かで落ち着ける場所にありますので、リラックスした環境をお求めのお客様にご好評いただいています。
-                            大きな共用リビングルームにはエアコンも完備。観葉植物のグリーンに囲まれながら、心ゆくまでリラックスしていただけます。
-                            <br /><br />
-                            イギリス人経営のお洒落なカフェやローカルレストランも近くにあるので、地元のフィリピンフードも存分に楽しむことができます。
+                            <FormattedMessage id="rooms-guadalupe-text01" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-guadalupe-text02" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-guadalupe-text03" />
                         </p>
                         <Gallery_1_2
                             img1={guadalupe_entrance002}
@@ -260,22 +262,19 @@ const Rooms = () => (
                 <div className="columns is-centered margin-top-2">
                     <div className="column is-8">
                         <p className="is-size-6 margin-bottom">
-                            お部屋には机と椅子のほか、
-                            エアコンとワードローブも付いています。（喫煙スペースは客室の外にご用意がございます）
-                            <br /><br />
-                            また、広い庭とテラスもゲストハウスストーリーシェアの特徴です。
-                            賑やかなセブの中心地にありながら、落ち着いた雰囲気で快適に過ごしていただけます。
-                            <br /><br />
-                            ゲストハウスストーリーシェア「グアダルーペ」はレストランやモールへのお出かけにも遠くないエリアにございます。
-                            カフェ、日本食レストラン、韓国レストランは歩いて数分。ショッピングモールへは20分ほどです。
-                            <br /><br />
-                            もちろん、タクシーやジプニーなどもご利用いただけます。フィリピンではいたるところにタクシーが走っており、
-                            初乗り料金100円ほどです。ジプニーと呼ばれるローカルバスや、トライシクルを利用すれば
-                            さらに格安でどこへでもお出かけできます。
-                            <br /><br />
-                            ゲストハウスストーリーシェアではバイクスクーターのレンタルもご利用できます。 
-                            もちろん、バイクを使わなくてもタクシーやジプニーがすぐ捕まえられるエリアですので、
-                            どんな場所にも簡単にアクセスできます。
+                            <FormattedMessage id="rooms-guadalupe-text04" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-guadalupe-text05" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-guadalupe-text06" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-guadalupe-text07" />
+                        </p>
+                        <p className="is-size-6 margin-bottom">
+                            <FormattedMessage id="rooms-guadalupe-text08" />
                         </p>
                     </div>
                 </div>
@@ -291,24 +290,24 @@ const Rooms = () => (
                         <div className="columns is-mobile">
                             <div className="column">
                                 <p className="subtitle is-size-5">
-                                    シングルルーム
+                                    <FormattedMessage id="single-room" />
                                 </p>
                             </div>
                             <div className="column">
                                 <p className="is-size-5">
-                                    700PHP/泊
+                                    700PHP/night
                                 </p>
                             </div>
                         </div>
                         <div className="columns is-mobile">
                             <div className="column">
                                 <h3 className="subtitle is-size-5">
-                                    格安シングル
+                                    <FormattedMessage id="budget-single-room" />
                                 </h3>
                             </div>
                             <div className="column">
                                 <p className="is-size-5">
-                                    550PHP/泊
+                                    550PHP/night
                                 </p>
                             </div>
                         </div>
@@ -316,21 +315,23 @@ const Rooms = () => (
                             <div className="column">
                                 <ButtonEx
                                     href="https://www.booking.com/hotel/ph/storyshare-inc-guesthouse.html"
-                                    text="Booking.comで予約"
+                                    text={intl.formatMessage({ id: "book-via-booking.com" })}
                                 />
                                 
                             </div>
                             <div className="column">
                                 <Button
                                     to="/contact"
-                                    text="直接予約する"
+                                    text={intl.formatMessage({ id: "book-via-this-site" })}
                                     green={true}
                                 />
                             </div>
                         </div>
                         <p>
-                            予約サイトの価格が高いですか？<br />
-                            直接のご予約で、上記料金を適用できます。
+                            <FormattedMessage id="expensive?" />
+                        </p>
+                        <p>
+                            <FormattedMessage id="book-directly" />
                         </p>
 
                     </div>
@@ -346,12 +347,12 @@ const Rooms = () => (
                         <div className="columns is-mobile">
                             <div className="column">
                                 <p className="subtitle is-size-5">
-                                    ツインルーム
+                                    <FormattedMessage id="twin-room" />
                                 </p>
                             </div>
                             <div className="column">
                                 <p className="is-size-5">
-                                    900PHP/泊
+                                    900PHP/night
                                 </p>
                             </div>
                         </div>
@@ -360,21 +361,23 @@ const Rooms = () => (
                             <div className="column">
                                 <ButtonEx
                                     href="https://www.booking.com/hotel/ph/storyshare-inc-guesthouse.html"
-                                    text="Booking.comで予約"
+                                    text={intl.formatMessage({ id: "book-via-booking.com" })}
                                 />
                                 
                             </div>
                             <div className="column">
                                 <Button
                                     to="/contact"
-                                    text="直接予約する"
+                                    text={intl.formatMessage({ id: "book-via-this-site" })}
                                     green={true}
                                 />
                             </div>
                         </div>
                         <p>
-                            予約サイトの価格が高いですか？<br />
-                            直接のご予約で、上記料金を適用できます。
+                            <FormattedMessage id="expensive?" />
+                        </p>
+                        <p>
+                            <FormattedMessage id="book-directly" />
                         </p>
                         
                     </div>
@@ -397,45 +400,45 @@ const Rooms = () => (
         <section className="section">
             <div className="container">
                 <h2 className="subtitle is-size-4 has-text-centered">
-                    お部屋の設備
+                    <FormattedMessage id="facilities-title" />
                 </h2>
                 <hr />
                 <p className="has-text-centered">
-                    「アパス」「グアダルーペ」共通
+                    <FormattedMessage id="facilities-subtitle" />
                 </p>
 
                 <div className="columns is-mobile is-multiline margin-top-2">
                     <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle"> キッチン</span>
-                        <p>共用キッチン利用可</p>
+                        <FontAwesomeIcon icon={faUtensils} /><span className="subtitle">&nbsp;<FormattedMessage id="ketchen" /></span>
+                        <p><FormattedMessage id="ketchen-desc" /></p>
                         <br />
-                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ペット</span>
-                        <p>ペットの宿泊不可</p>
+                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle">&nbsp;<FormattedMessage id="pet" /></span>
+                        <p><FormattedMessage id="pet-desc" /></p>
                         <br />
-                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle"> Wifi</span>
-                        <p>WiFi無料</p>
+                        <FontAwesomeIcon icon={faWifi} /><span className="subtitle">&nbsp;<FormattedMessage id="wifi" /></span>
+                        <p><FormattedMessage id="wifi-desc" /></p>
                     </div>
 
                     <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faConciergeBell} /><span className="subtitle"> サービス</span>
-                        <p>専用チェックイン / チェックアウト</p>
+                        <FontAwesomeIcon icon={faConciergeBell} /><span className="subtitle">&nbsp;<FormattedMessage id="service" /></span>
+                        <p><FormattedMessage id="service-desc" /></p>
                         <br />
-                        <FontAwesomeIcon icon={faTshirt} /><span className="subtitle"> ランドリー</span>
-                        <p>洗濯サービスは格安にて承ります</p>
+                        <FontAwesomeIcon icon={faTshirt} /><span className="subtitle">&nbsp;<FormattedMessage id="laundry" /></span>
+                        <p><FormattedMessage id="laundry-desc" /></p>
                         <br />
-                        <FontAwesomeIcon icon={faParking} /><span className="subtitle"> 駐車場</span>
-                        <p>駐車スペースは1日20PHPにてご利用できます</p>
+                        <FontAwesomeIcon icon={faParking} /><span className="subtitle">&nbsp;<FormattedMessage id="parking" /></span>
+                        <p><FormattedMessage id="parking-desc" /></p>
                     </div>
 
                     <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faHome} /><span className="subtitle"> その他</span>
-                        <p>分煙・喫煙スペース有</p>
-                        <p>エアコン</p>
-                        <p>防音ルーム</p>
-                        <p>禁煙スペース有</p>
+                        <FontAwesomeIcon icon={faHome} /><span className="subtitle">&nbsp;<FormattedMessage id="general" /></span>
+                        <p><FormattedMessage id="general-desc01" /></p>
+                        <p><FormattedMessage id="general-desc02" /></p>
+                        <p><FormattedMessage id="general-desc03" /></p>
+                        <p><FormattedMessage id="general-desc04" /></p>
                         <br />
-                        <FontAwesomeIcon icon={faLanguage} /><span className="subtitle"> 対応言語</span>
-                        <p>英語 / 日本語</p>
+                        <FontAwesomeIcon icon={faLanguage} /><span className="subtitle">&nbsp;<FormattedMessage id="languages" /></span>
+                        <p><FormattedMessage id="languages-desc" /></p>
                     </div>
                     
                     
@@ -448,48 +451,55 @@ const Rooms = () => (
         <section className="section">
             <div className="container">
                 <h2 className="subtitle is-size-4 has-text-centered">
-                    宿泊のルール
+                    <FormattedMessage id="house-rules-title" />
                 </h2>
                 <hr />
                 <p className="has-text-centered">
-                    「アパス」「グアダルーペ」共通
+                    <FormattedMessage id="house-rules-subtitle" />
                 </p>
 
                 <div className="columns is-mobile is-multiline margin-top-2">
                     <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faSuitcaseRolling} /><span className="subtitle"> チェックイン/ チェックアウト</span>
+                        <FontAwesomeIcon icon={faSuitcaseRolling} />
+                        <span className="subtitle">&nbsp;<FormattedMessage id="checkin-checkout" /></span>
                         
-                        <p><br />チェックイン :<br /> 3:00 PM - 7:00 PM</p>
+                        <p><br /><FormattedMessage id="checkin-checkout-desc01" /><br /> 3:00 PM - 7:00 PM</p>
                         <br />
-                        <p>チェックアウト :<br /> 10:00 AM</p>
+                        <p><FormattedMessage id="checkin-checkout-desc02" /><br /> 10:00 AM</p>
                         <br />
-                        <FontAwesomeIcon icon={faGlassCheers} /><span className="subtitle"> 年齢制限なし</span>
-                        <p>ゲストの年齢制限はありません</p>
+                        <FontAwesomeIcon icon={faGlassCheers} />
+                        <span className="subtitle">&nbsp;<FormattedMessage id="age-restriction" /></span>
+                        <p><FormattedMessage id="age-restriction-desc" /></p>
                         
                     </div>
 
                     <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faBaby} /><span className="subtitle"> お子様とベッド</span>
-                        <p>お子様も宿泊できます</p>
-                        <p>ベビーベッドのご用意はありません</p>
-                        <p>エクストラベッドは200PHP（１名）です</p>
+                        <FontAwesomeIcon icon={faBaby} />
+                        <span className="subtitle">&nbsp;<FormattedMessage id="children-beds" /></span>
+                        <p><FormattedMessage id="children-beds-desc01" /></p>
+                        <p><FormattedMessage id="children-beds-desc02" /></p>
+                        <p><FormattedMessage id="children-beds-desc03" /></p>
                         <br />
-                        <FontAwesomeIcon icon={faBan} /><span className="subtitle"> キャンセル / お支払い</span>
-                        <p>キャンセルについてはお部屋によって異なりますので. ご予約の際にお問い合わせください。</p>
+                        <FontAwesomeIcon icon={faBan} />
+                        <span className="subtitle">&nbsp;<FormattedMessage id="cancellations-payment" /></span>
+                        <p><FormattedMessage id="cancellations-payment-desc" /></p>
                     </div>
 
                     <div className="column is-size-5 is-half-mobile">
-                        <FontAwesomeIcon icon={faMoneyBillAlt} /><span className="subtitle"> 現金のみ</span>
-                        <p>現金（ペソ）でのお支払いのみ可能です</p>
+                        <FontAwesomeIcon icon={faMoneyBillAlt} />
+                        <span className="subtitle">&nbsp;<FormattedMessage id="cash-only" /></span>
+                        <p><FormattedMessage id="cash-only-desc" /></p>
                         <br />
-                        <FontAwesomeIcon icon={faPaw} /><span className="subtitle"> ペット</span>
-                        <p>ペットのお持ち込み不可</p>
+                        <FontAwesomeIcon icon={faPaw} />
+                        <span className="subtitle">&nbsp;<FormattedMessage id="pet" /></span>
+                        <p><FormattedMessage id="pet-desc" /></p>
                     </div>
                 </div>
             </div>
         </section>
 
     </Layout>
-)
+    )
+}
 
 export default Rooms
