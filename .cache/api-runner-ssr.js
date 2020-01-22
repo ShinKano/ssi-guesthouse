@@ -2,6 +2,9 @@ var plugins = [{
       plugin: require('/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('/Users/Shinnosuke/Documents/batch5/ssi-guesthouse/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{

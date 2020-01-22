@@ -32,20 +32,20 @@
         "matchPath": "/en/contact/file-upload/"
     },
     {
-        "path": "/ja/tags/news/",
-        "matchPath": "/ja/tags/news/"
-    },
-    {
-        "path": "/en/tags/news/",
-        "matchPath": "/en/tags/news/"
-    },
-    {
         "path": "/ja/tags/ゲストハウス/",
         "matchPath": "/ja/tags/ゲストハウス/"
     },
     {
         "path": "/en/tags/ゲストハウス/",
         "matchPath": "/en/tags/ゲストハウス/"
+    },
+    {
+        "path": "/ja/tags/news/",
+        "matchPath": "/ja/tags/news/"
+    },
+    {
+        "path": "/en/tags/news/",
+        "matchPath": "/en/tags/news/"
     },
     {
         "path": "/ja/tags/セブおすすめスポット/",
@@ -56,20 +56,20 @@
         "matchPath": "/en/tags/セブおすすめスポット/"
     },
     {
-        "path": "/ja/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/",
-        "matchPath": "/ja/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/"
-    },
-    {
-        "path": "/en/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/",
-        "matchPath": "/en/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/"
-    },
-    {
         "path": "/ja/blog/2019-12-28-シヌログ祭とは？2020の全日程・スケジュールはコチラ！【sinulog2020】/",
         "matchPath": "/ja/blog/2019-12-28-シヌログ祭とは？2020の全日程・スケジュールはコチラ！【sinulog2020】/"
     },
     {
         "path": "/en/blog/2019-12-28-シヌログ祭とは？2020の全日程・スケジュールはコチラ！【sinulog2020】/",
         "matchPath": "/en/blog/2019-12-28-シヌログ祭とは？2020の全日程・スケジュールはコチラ！【sinulog2020】/"
+    },
+    {
+        "path": "/ja/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/",
+        "matchPath": "/ja/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/"
+    },
+    {
+        "path": "/en/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/",
+        "matchPath": "/en/blog/2020-01-14-booking-com-ゲスト・レビュー・アワード2020を受賞！/"
     },
     {
         "path": "/ja/blog/2019-12-27-スターバックス-リザーブ®-がセブのitパークにオープンしました！/",
@@ -88,22 +88,6 @@
         "matchPath": "/en/blog/2019-12-25-セブ島をレンタルバイクで探検しませんか？/"
     },
     {
-        "path": "/ja/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/",
-        "matchPath": "/ja/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/"
-    },
-    {
-        "path": "/en/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/",
-        "matchPath": "/en/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/"
-    },
-    {
-        "path": "/ja/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/",
-        "matchPath": "/ja/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/"
-    },
-    {
-        "path": "/en/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/",
-        "matchPath": "/en/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/"
-    },
-    {
         "path": "/ja/blog/2019-12-25-【セブ島】イギリス人バリスタのカフェ「-nanaymo」wifi有りでオシャレ！/",
         "matchPath": "/ja/blog/2019-12-25-【セブ島】イギリス人バリスタのカフェ「-nanaymo」wifi有りでオシャレ！/"
     },
@@ -112,12 +96,28 @@
         "matchPath": "/en/blog/2019-12-25-【セブ島】イギリス人バリスタのカフェ「-nanaymo」wifi有りでオシャレ！/"
     },
     {
+        "path": "/ja/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/",
+        "matchPath": "/ja/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/"
+    },
+    {
+        "path": "/en/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/",
+        "matchPath": "/en/blog/2019-12-23-女性の一人旅でもオススメできるゲストハウス選びのコツ！/"
+    },
+    {
         "path": "/ja/blog/2019-12-23-セブで格安ホテルに泊まるならゲストハウスの方が快適かも？/",
         "matchPath": "/ja/blog/2019-12-23-セブで格安ホテルに泊まるならゲストハウスの方が快適かも？/"
     },
     {
         "path": "/en/blog/2019-12-23-セブで格安ホテルに泊まるならゲストハウスの方が快適かも？/",
         "matchPath": "/en/blog/2019-12-23-セブで格安ホテルに泊まるならゲストハウスの方が快適かも？/"
+    },
+    {
+        "path": "/ja/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/",
+        "matchPath": "/ja/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/"
+    },
+    {
+        "path": "/en/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/",
+        "matchPath": "/en/blog/2019-12-23-booking-com-ゲスト・レビュー・アワードを受賞しました！/"
     },
     {
         "path": "/ja/blog/2019-12-22-【2020年版】セブでオススメの焼肉屋まとめ！【食べ放題】/",

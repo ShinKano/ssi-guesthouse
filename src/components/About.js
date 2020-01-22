@@ -37,7 +37,7 @@ const About = () => {
                             {intl.formatMessage({ id: "about-text02" })}
                         </p>
                         <p className="margin-top">
-                            {intl.formatMessage({ id: "about-text02" })}
+                            {intl.formatMessage({ id: "about-text03" })}
                         </p>
                     </div>
                 </div>

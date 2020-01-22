@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://www.ss-guesthouse.com/',
     title: 'セブ島のゲストハウスならストーリーシェア【公式】（Guesthouse Storyshare）',
     description:
       'フィリピン・セブ島・バギオに展開するゲストハウス。完全個室・専用バスルーム付きで旅人やバックパッカーの安心で安全な旅をサポート。格安ホテルより自由で過ごしやすい！',
@@ -7,6 +8,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-styled-components',
     {
         resolve: `gatsby-plugin-intl`,

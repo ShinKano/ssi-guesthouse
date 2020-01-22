@@ -19,7 +19,8 @@ const TemplateWrapper = ({ children }) => {
         <html />
         <title>{intl.formatMessage({ id: "title" })}</title>
         <meta name="description" content={intl.formatMessage({ id: "description" })} />
-
+        <link rel="alternate" hreflang="ja" href="https://www.ss-guesthouse.com/" />
+        <link rel="alternate" hreflang="en" href="https://www.ss-guesthouse.com//en/" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
