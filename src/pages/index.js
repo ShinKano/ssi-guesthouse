@@ -12,7 +12,7 @@ import("../../src/index.sass")
 const Tetete = (props) => {
 
     // Display blog posts only for Japanese.
-    const isJapanese = (props.path == "/ja/") ? true : false
+    const isJapanese = (props.path == "/ja/" || props.path == "/") ? true : false
 
     return (
     <Layout>
@@ -22,9 +22,6 @@ const Tetete = (props) => {
         <About />
         <Locations />
         <Features />
-
-
-        
     </Layout>
     )
 }
