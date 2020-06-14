@@ -32,6 +32,14 @@
         "matchPath": "/en/contact/file-upload/"
     },
     {
+        "path": "/ja/tags/営業状況/",
+        "matchPath": "/ja/tags/営業状況/"
+    },
+    {
+        "path": "/en/tags/営業状況/",
+        "matchPath": "/en/tags/営業状況/"
+    },
+    {
         "path": "/ja/tags/ゲストハウス/",
         "matchPath": "/ja/tags/ゲストハウス/"
     },
@@ -54,6 +62,22 @@
     {
         "path": "/en/tags/news/",
         "matchPath": "/en/tags/news/"
+    },
+    {
+        "path": "/ja/blog/2020-03-28-新型コロナウイルスに関する営業状況について/",
+        "matchPath": "/ja/blog/2020-03-28-新型コロナウイルスに関する営業状況について/"
+    },
+    {
+        "path": "/en/blog/2020-03-28-新型コロナウイルスに関する営業状況について/",
+        "matchPath": "/en/blog/2020-03-28-新型コロナウイルスに関する営業状況について/"
+    },
+    {
+        "path": "/ja/blog/2020-03-07-【2020年】セブ島3月のイベントまとめ【セブに住みの現地情報】/",
+        "matchPath": "/ja/blog/2020-03-07-【2020年】セブ島3月のイベントまとめ【セブに住みの現地情報】/"
+    },
+    {
+        "path": "/en/blog/2020-03-07-【2020年】セブ島3月のイベントまとめ【セブに住みの現地情報】/",
+        "matchPath": "/en/blog/2020-03-07-【2020年】セブ島3月のイベントまとめ【セブに住みの現地情報】/"
     },
     {
         "path": "/ja/blog/2020-01-28-【2020年】セブ島1月のイベントまとめ【セブ在住10年以上の経営者監修】/",
@@ -190,6 +214,14 @@
     {
         "path": "/en/blog/",
         "matchPath": "/en/blog/"
+    },
+    {
+        "path": "/ja/dev-404-page/",
+        "matchPath": "/ja/dev-404-page/"
+    },
+    {
+        "path": "/en/dev-404-page/",
+        "matchPath": "/en/dev-404-page/"
     },
     {
         "path": "/ja/",
